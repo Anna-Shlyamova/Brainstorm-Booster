@@ -1,0 +1,14 @@
+//- Блок тренды
+mixin trends
+    section#block5.trends 
+        img.trends__number(src="assets/images/general/5.svg", alt="Номер задания 5")
+        h2.block__header.trends__header Тренды
+        .trends__text-box
+            p.block__text.trends__text <strong> Выпиши известные и популярные тренды из твоей сферы деятельности. Скоро мы попробуем их применить.</strong>
+        .trends__input-field
+            textarea#trends_input.block__input.trends__input(name="trends", maxlength="1000", height="50px",oninput="countChars('trends_input')",placeholder="Просто начни писать здесь")
+            output#trends_input_out.trends__output <span id="count_trends_input">0</span>/1000
+        button.btn.trends__btn.save-btn сохранить
+        img.trends-group__tape(src="assets/images/general/grid_grin_5.svg", alt="")
+        img.trends-group__tape--small(src="assets/images/general/grid_back.svg", alt="")
+        textarea.trends-group__notes.block__note(name="trends_note",maxlength="150", placeholder="Ты можешь оставлять заметки на этих полях")

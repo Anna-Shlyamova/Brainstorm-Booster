@@ -1,0 +1,17 @@
+//- общий блок footer
+
+//- список контактов
+-var footerMenuList = ["Компания", "Сайт", "Соц.сети"]
+
+mixin footer
+    footer.footer
+        .footer__container
+            .footer__info
+                a(href="https://disciplina-courses.ru/" target="_blank") 
+                    img(src="assets/images/footer/logo_disciplina.png", alt="")
+                a(href="https://yoootime.com/" target="_blank") 
+                    img(src="assets/images/footer/logo_yoootime.svg", alt="")
+                a(href="https://lad-academy.ru/" target="_blank") 
+                    img(src="assets/images/footer/logo_lad.png", alt="")
+            p Проект разработан &nbsp; #[a(href="https://yoootime.com/" target="_blank") yoootime]
+            p Сайт разработан &nbsp; #[a(href="https://lad-academy.ru/" target="_blank") IT-академией Lad]

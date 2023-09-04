@@ -1,0 +1,319 @@
+._container
+  max-width: 1440px
+  margin: 0px auto
+  background-image: url("../images/index/logo_on.svg")
+  background-size: 100%
+  background-position: top 58px center
+  background-repeat: no-repeat
+
+._page-conteiner
+  max-width: 45%
+  margin: 0px auto
+
+.main__info
+  display: flex
+
+  .main__description
+    position: relative
+    max-width: 705px
+    min-height: 30vw
+    margin-top: 38%
+    font-size: 20px
+
+    p
+      padding-bottom: 20px
+      &:first-child
+        font-weight: 600
+      &:nth-child(2)
+        span
+          font-weight: 600
+
+.main__result
+  margin-top: 0
+  z-index: 1
+
+.main__result-content
+  margin-bottom: 200px
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: top
+  align-items: center
+  max-width: 1210px
+  min-height: 510px
+  background: url("../images/index/paper.svg") center 60px no-repeat, url("../images/index/cell-yellow.svg") bottom -17px right/220px no-repeat
+  background-color: $red
+  &::before
+    content: ""
+    position: absolute
+    top: -115px
+    left: -65px
+    width: 285px
+    height: 285px
+    background: url("../images/index/cell-green.svg") no-repeat
+    z-index: -1
+  &::after
+    content: ""
+    position: absolute
+    bottom: -25px
+    right: -25px
+    width: 414px
+    height: 305px
+    background-color: $yellow
+    z-index: -1
+
+.main__title
+  display: flex
+  position: relative
+  width: 625px
+  margin-top: 4px
+  font-family: $stikers-font
+  font-weight: 400
+  font-size: 34px
+  color: $white
+  transform: rotate(-2.37deg)
+  &::before
+    content: ''
+    position: absolute
+    bottom: -4px
+    left: -20px
+    width: 254px
+    height: 13px
+    background: url('../images/index/underline.svg') 0 0 no-repeat
+    transform: rotate(2deg)
+    z-index: 5
+
+.main__block-list
+  margin-top: 45px
+  font-size: 18px
+
+  ul
+    padding-left: 20px
+    li
+      position: relative
+      padding-bottom: 5px
+      list-style-type: none
+      &::before
+        content: ''
+        position: absolute
+        top: 30%
+        left: -15px
+        width: 4px
+        height: 4px
+        border-radius: 50%
+        background: #000
+
+.main__slogan
+  position: relative
+  p
+    position: absolute
+    width: 348px
+    top: 20px
+    right: 0
+    font-family: $stikers-font
+    font-weight: 500
+    font-size: 24px
+    color: #222222
+    transform: rotate(-3.49deg)
+
+  &::before
+    content: ''
+    position: absolute
+    top: 20px
+    right: 0
+    width: 415px
+    height: 65px
+    background: url('../images/index/slogan-bg.svg') center no-repeat
+
+.main__stiker
+  display: flex
+  align-items: center
+  position: absolute
+  width: 225px
+  height: 225px
+  padding: 48px 35px
+  bottom: -60px
+  left: 155px
+  .-text-help
+    display: none
+
+  background-color: $yellow
+  transform: rotate(-10.15deg)
+  p
+    font-family: $stikers-font
+    font-size: 24px
+  img
+    position: absolute
+    top: -30px
+    left: 38%
+  &::after
+    content: ""
+    position: absolute
+    width: 120px
+    height: 98px
+    top: 48%
+    right: -40px
+    transform: rotate(10deg)
+    background: url("../images/index/arrow.svg") no-repeat
+
+.main-button
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  bottom: 58px
+  right: 264px
+  width: 232px
+  height: 42px
+  font-weight: 600
+
+.main-guide
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  bottom: 58px
+  left: 422px
+  width: 232px
+  height: 42px
+  font-size: 20px
+  font-weight: 600
+
+// Блок с видео
+.main__training
+  display: flex
+  width: 100%
+  position: relative
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding-bottom: 33px
+  background: $red
+
+.main__lecture
+  position: relative
+  &::after
+    content: url("../images/index/new-cell-yellow.svg")
+    position: absolute
+    top: 160px
+    left: 50px
+
+.main__pointer-to-tech
+  position: absolute
+  top: 277px
+  left: 65px
+  text-align: center
+  font-family: $stikers-font
+  font-weight: 400
+  font-size: 35px
+  color: $white
+  transform: rotate(-10.02deg)
+  &::before
+    content: ''
+    position: absolute
+    top: -5px
+    left: 30px
+    width: 33px
+    height: 40px
+    background: url('../images/index/check-mark.svg') center no-repeat
+  &::after
+    content: ''
+    position: absolute
+    top: -90px
+    right: -110px
+    width: 160px
+    height: 160px
+    background: url('../images/index/arrow2.svg') center no-repeat
+    transform: rotate(8deg)
+
+.main__lecture
+  display: flex
+  justify-content: space-between
+  padding: 20px
+  margin-top: 30px
+  width: 1210px
+  height: 120px
+  background: $white
+  .main__recommendation
+    width: 420px
+    font-size: 20px
+    font-weight: 600
+  .main__lecture-video
+    width: 700px
+    height: 400px
+.main__ideas
+
+  display: flex
+  flex-direction: column
+  max-width: 1210px
+  height: 100%
+  margin-top: 387px
+  padding: 20px 35px
+  background: url("../images/index/lucky.svg") bottom 38px right 50px no-repeat, url("../images/index/new-cell-yellow.svg") repeat
+  background-color: $white
+
+.main__ideas-stikers
+  display: flex
+  flex-wrap: wrap
+  
+  justify-contennt: space-around
+  gap: 60px 0
+  padding: 60px 0
+  width: 100%
+
+  .main__ideas-stiker-wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+    flex: 1 1 auto
+  .main__ideas-stiker
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+  .main__ideas-stiker-wrapper:nth-child(1) .main__ideas-stiker
+    background: $yellow
+    transform: rotate(8deg)
+
+  .main__ideas-stiker-wrapper:nth-child(2) .main__ideas-stiker
+    transform: rotate(-8deg)
+    background: $yellow
+
+  .main__ideas-stiker-wrapper:nth-child(3) .main__ideas-stiker
+    transform: rotate(-20deg)
+
+  .main__ideas-stiker-wrapper:nth-child(4) .main__ideas-stiker
+    transform: rotate(-4deg)
+    background: $yellow
+
+  .main__ideas-stiker-wrapper:nth-child(5) .main__ideas-stiker
+    transform: rotate(-20deg)
+
+  .main__ideas-stiker-wrapper:nth-child(5) .main__ideas-stiker
+    transform: rotate(12deg)
+
+  .main__ideas-stiker-wrapper:nth-child(6) .main__ideas-stiker
+    background: $yellow
+    transform: rotate(-8deg)
+
+  .main__ideas-text
+    margin-top: 28px
+    width: 800px
+    font-size: 22px
+    font-weight: 600
+
+.main__ideas-stiker
+  position: static
+  display: flex
+  justify-content: center
+  margin-bottom: 50px
+  width: 300px
+  height: 300px
+  letter-spacing: 0.03em
+
+._main_page
+  max-width: 1440px
+  margin: 0px auto
+  background: $red

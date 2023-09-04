@@ -1,0 +1,9 @@
+//- Блок итоги
+mixin conclusion
+    section.conclusion 
+        h2.block__header.conclusion__header Итоги
+        .conclusion__input-field
+            textarea#conclusion_input.block__input.conclusion__input(name="conclusion",maxlength="1000",oninput="countChars('conclusion_input')", rows="4" placeholder="Если есть желание зафиксировать что-то еще, можешь написать в этом окне. Если нет, переходи к предпросмотру итогов твоей креативной сессии. Ты можешь вернуться, внести правки и сохранить документ.")
+            output#conclusion_input_out.conclusion__output <span id="count_conclusion_input">0</span>/1000
+        button.btn.conclusion__btn сохранить
+        

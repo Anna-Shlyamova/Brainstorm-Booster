@@ -1,0 +1,124 @@
+//- Блок эмоции
+mixin emotions
+    section#block4.emotions
+        .emotions__content-header
+            .emotions__content-img
+                img.emotions__number(src="assets/images/general/emotions/4.svg")
+            .emotions__content-title
+                h2.block__header.emotions__header Эмоции
+                .emotions__text-box
+                    p.block__text.emotions__text #[strong Выбери эмоции из списка, отвечая на вопрос:] «Какие эмоции испытывает целевая аудитория при взаимодействии с твоим продуктом или проектом?» Опирайся на пункт №2.
+        #emotions_block4.emotions__block 
+            .emotions__options
+                .emotions__items
+                    .emotions__item
+                        input(type="checkbox", id="checkbox1" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox1" class="emotions__name") счастье
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox2" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox2" class="emotions__name") ожидание
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox3" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox3" class="emotions__name") теплота
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox4" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox4" class="emotions__name") гордость
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox5" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox5" class="emotions__name") доброта
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox6" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox6" class="emotions__name") восторг
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox7" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox7" class="emotions__name") предвкушение
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox8" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox8" class="emotions__name") доверие
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox9" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox9" class="emotions__name") восхищение
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox10" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox10" class="emotions__name") признание
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox11" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox11" class="emotions__name") увлечение
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox12" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox12" class="emotions__name") надежда
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox13" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox13" class="emotions__name") безопасность
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox14" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox14" class="emotions__name") любовь к себе
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox15" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox15" class="emotions__name") вдохновление
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox16" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox16" class="emotions__name") интерес
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox17" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox17" class="emotions__name") любопытство
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox18" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox18" class="emotions__name") благодарность
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox19" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox19" class="emotions__name") искренность
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox20" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox20" class="emotions__name") мотивация
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox21" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox21" class="emotions__name") забота
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox22" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox22" class="emotions__name") изумление
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox23" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox23" class="emotions__name") спокойствие
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox24" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox24" class="emotions__name") дружелюбие
+
+                    .emotions__item
+                        input(type="checkbox", id="checkbox25" class="emotions__input" onclick="return limitChecked()")
+                        label(for="checkbox25" class="emotions__name") уважение
+                
+                input.emotions__self-value(type="text" placeholder="Свой вариант..." onclick="return limitChecked()")
+            button.btn.emotions__btn.save-btn сохранить
+            img.emotions__dots_back(src="assets/images/general/dots_back_small.svg", alt="")
+            textarea.emotions__notes.block__note(name="purpose_note", maxlength="150",placeholder="Ты можешь оставлять заметки на этих полях")
+            .emotions__hints._stiker(onclick="closerHint('emotions')")
+                img._stiker-scotch(src="assets/images/index/scotch.svg", alt="")
+                p Можешь добавить свою эмоцию в пустом окне 
+                img.block_hints-cross(src="assets/images/general/X.svg")
+            span.emotions__hints_text--small(onclick="sizerHint('emotions')") Подсказка
+            img.emotions__hints--small(src="assets/images/general/little-green-sticker.svg", onclick="sizerHint('emotions')")
+

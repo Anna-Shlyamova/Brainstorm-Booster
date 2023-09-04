@@ -1,0 +1,53 @@
+//- вторая страница
+include ../blocks/total/head/head
+include ../blocks/total/footer/footer
+include ../blocks/total/header/header
+include ../blocks/general/nav/nav
+include ../blocks/general/counter/counter
+include ../blocks/general/conclusion/conclusion
+include ../blocks/general/emotions/emotions
+include ../blocks/general/trends/trends
+include ../blocks/general/limits/limits
+include ../blocks/general/purpose/purpose
+include ../blocks/general/target_group/target_group
+include ../blocks/general/value_proposition/value_proposition
+include ../blocks/general/values/values
+include ../blocks/general/summary/summary
+doctype html
+html(lang="ru")
+    head
+        +head
+    body.container-bg
+        +header
+        +nav
+        .container
+            .content-container
+                section.intro
+                    p.intro__text Итак, за структуру твоей креативной сессии отвечает <strong> Brainstorm booster, </strong>а ты не стесняйся ставить амбициозные цели, экспериментировать и искать прорывные решения.
+                    <br>
+                    p.intro__text <strong>Делай все последовательно, фокусируйся на каждом этапе.<br>Ну что, начнем? </strong>
+                +purpose
+                +target_group
+                +values
+        .container-emotions
+            +emotions
+        .container
+            .content-container
+                +trends
+                +limits
+                +counter
+                +value_proposition
+                +conclusion
+        .summary-container 
+                +summary
+        +footer
+        script(src="assets/js/emotions_block.min.js")
+        script(src="assets/js/target_group.min.js")
+        script(src="assets/js/pdfmake.min.js")
+        script(src="assets/js/vfs_fonts.min.js")
+        script(src="assets/js/main.min.js")
+        script(src="assets/js/gen_pdf.min.js")
+        script(src="assets/js/counter_anim.min.js")
+        script(src="assets/js/value_proposition.min.js")
+        script(src="assets/js/nav.min.js")
+        script(src="assets/js/emotions_input.min.js")

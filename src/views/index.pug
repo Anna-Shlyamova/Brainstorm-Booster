@@ -1,0 +1,73 @@
+//- первая страница
+include ../blocks/total/head/head.pug
+include ../blocks/total/header/header.pug
+include ../blocks/total/footer/footer.pug
+
+-var mainBlockList = ["Разработка концепции: продукта, проекта или рекламной кампании", "Развитие и усовершенствование продукта или проекта", "Генерация тематик или рубрик", "Разработка маркетинговых и бренд-стратегий", "Проектирование пользовательского опыта","Создание идеи события и его наполнения", "Разработка идей по разработке мерча и сувенирной продукции", "Развитие процессов бренда работодателя"]
+
+doctype html
+html(lang="ru")
+    head
+        +head
+    body
+        +header
+        main.main
+            .main__info._container
+                .main__description._page-conteiner
+                    p Привет! Это твой трекер по креативности. Он поможет найти тебе простые решения сложных задач, сделать их инновационными и наполненными смыслом.
+                    p #[span Ты можешь работать здесь один или в команде.]#[br]Если ты работаешь один, не забудь протестировать свои лучшие идеи. Если работаете в команде, то распределитесь по ролям: креаторы, модераторы, секретарь, ведь именно в организованной коммуникации рождаются инновации.
+                    p Креатив — процесс увлекательный, но системный.#[br] Время превратить его в реальные результаты.
+            .main__result
+                .main__result-content._page-conteiner
+                    h2.main__title.translate А что получится?
+                    .main__block-list
+                        ul
+                            for item in mainBlockList
+                                li=item
+                        .main__slogan
+                            p Будь любопытным, исследуй новые направления и экспериментируй! =)
+                    .main__buttons
+                        a(href="guide.html" class="main-guide btn") Guide 
+                        a(href="general_page.html" class="main-button btn") GO!
+                        .main__stiker
+                            img(src="assets/images/index/scotch.svg", alt="")
+                            p.-stiker-text Ты можешь пройти обучение, как работать с трекером
+                            p.-text-help Подсказка
+            .main__training
+                .main__lecture 
+                    p.main__recommendation Для вдохновения рекомендуем посмотреть тебе лекцию о креативном мышлении. 
+                    p.main__pointer-to-tech Техники#[br]креативного штурма
+                    .main__lecture-video
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/n2a2kD0Y4NI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                .main__ideas
+                    .main__ideas-text
+                        p #[strong А еще лови некоторые идеи и принципы креативного мышления, которые могут тебе пригодиться при работе с трекером:]
+                    .main__ideas-stikers
+                        .main__ideas-stiker-wrapper
+                            .main__ideas-stiker._stiker
+                                img._stiker-scotch(src="assets/images/index/scotch.svg", alt="")
+                                p Генерация идей: Не ограничивай себя сразу оценкой и выбором, дай идеям возможность развиваться.
+                        .main__ideas-stiker-wrapper
+                            .main__ideas-stiker._stiker
+                                img._stiker-scotch(src="assets/images/index/scotch.svg", alt="")
+                                p Ассоциации и связи: Ищи связи между разными идеями, предметами или концепциями. Комбинируй и объединяй разные элементы для создания новых идей и решений.
+                        .main__ideas-stiker-wrapper
+                            .main__ideas-stiker._stiker
+                                img._stiker-scotch(src="assets/images/index/scotch.svg", alt="")
+                                p Выходи за пределы привычного: Используй различные подходы для решения задач. Попробуй посмотреть на вещи с неожиданных точек зрения и ищи альтернативные пути решения.
+                        .main__ideas-stiker-wrapper
+                            .main__ideas-stiker._stiker
+                                img._stiker-scotch(src="assets/images/index/scotch.svg", alt="")
+                                p Прототипирование и тестирование: Не стремись сразу к идеальному. Создавай прототипы или модели своих идей, чтобы оценить их работоспособность. Тестирование поможет понять, что работает и что можно улучшить.
+                        .main__ideas-stiker-wrapper
+                            .main__ideas-stiker._stiker
+                                img._stiker-scotch(src="assets/images/index/scotch.svg", alt="")
+                                p Сотрудничество и обмен идеями: Работай в команде или общайся с другими креативными людьми. Обмен идеями и мнениями может привести к новым взглядам и перспективам.
+                        .main__ideas-stiker-wrapper
+                            .main__ideas-stiker._stiker
+                                img._stiker-scotch(src="assets/images/index/scotch.svg", alt="")
+                                p Учись допускать ошибки: Креативность требует экспериментов, и иногда идеи могут не сразу сработать. Но не отчаивайся, не бойся ошибаться и извлекать уроки из неудач. Это часть процесса роста и развития.
+        +footer
+    script(src="assets/js/main_page.min.js")
+    script(src="assets/js/main.min.js")

@@ -1,0 +1,19 @@
+//- Блок ограничения
+mixin limits
+    section#block6.limits 
+        img.limits__number(src="assets/images/general/6.svg", alt="Номер задания 6")
+        .limits__text-box
+            h2.block__header.limits__header Ограничения
+            p.block__text.limits__text <strong> Какие ресурсные ограничения могут появиться при реализации идеи? </strong>
+        .limits__input-field
+            textarea#limits_input.block__input.limits__input(name="limits", maxlength="1000", oninput="countChars('limits_input')",placeholder="Мы хотим придумать рубрики для агентства. Мы ограничены соцсетями, в которых уже есть аккаунты, разработанной маркетинговой стратегией, выстроенным TOV.")
+            output#limits_input_out.limits__output <span id="count_limits_input">0</span>/1000
+        button.btn.limits__btn.save-btn сохранить
+        img.limits__tape(src="assets/images/general/duct_tape.svg", alt="")
+        .block_hints.limits__hints(onclick="closerHint('limits')")
+            p Например, ограничение по ресурсам, внешней среде, количеству людей...
+            img.block_hints-cross(src="assets/images/general/X.svg")
+        img.limits__hints--small(src="assets/images/general/little-yellow-sticker.svg" onclick="sizerHint('limits')")
+        span.limits__hints_text--small(onclick="sizerHint('limits')") Подсказка
+        textarea.limits__notes.block__note(name="limits_note",maxlength="150", placeholder="Ты можешь оставлять заметки на этих полях")
+        

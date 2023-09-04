@@ -1,0 +1,20 @@
+//- Блок ценности
+mixin values
+    section#block3.values 
+            img.values__number(src="assets/images/general/3.svg", alt="Номер задания 3")
+            h2.block__header.values__header Ценности
+            .values__text-box
+                p.block__text.values__text <strong>Выпиши ценности, если они уже есть. Или создай их сейчас,</strong> для этого  ответь на вопрос:<br> «Что важно в вашем проекте или продукте?»
+            .values__input-field
+                textarea#values_input.block__input.values__input(name="values",maxlength="1000",oninput="countChars('values_input')", rows="13" placeholder="Например, вот некоторые ценности нашего коммуникационного агентства:\n\n1.Креативный подход к решению любых задач: Мы придерживаемся гибкого подхода к решению возникающих вопросов.\n\n2.Ценность команды: Мы придаем большое значение навыкам каждого члена нашей команды. Мы все ощущаем коллективную ответственность и стремимся к развитию как команды, так и наших клиентов.\n\n3.Открытость: Мы ценим обмен экспертизой и готовы делиться знаниями и опытом с другими.")
+                output#values_input_out.values__output <span id="count_values_input">0</span>/1000
+            button.btn.values__btn.save-btn сохранить
+            img.dots_back(src="assets/images/general/dots_back_small.svg", alt="")
+            textarea.values__notes.block__note(name="purpose_note", maxlength="150",placeholder="Ты можешь оставлять заметки на этих полях")
+            .block_hints.values__hints(onclick="closerHint('values')")
+                p Если ценностей получится много - пропустите через повторный фильтр, отвечая на вопрос: «действительно ли важна эта ценность для нашего проекта или продукта и почему»
+                img.block_hints-cross(src="assets/images/general/X.svg")
+                img.values__tape.values__tape__1(src="assets/images/general/tape.svg", alt="")
+                img.values__tape.values__tape__2(src="assets/images/general/tape.svg", alt="")
+            img.values__hints--small(src="assets/images/general/little-yellow-sticker.svg" onclick="sizerHint('values')")
+            span.values__hints_text--small(onclick="sizerHint('values')") Подсказка

@@ -1,0 +1,17 @@
+//- Блок цель
+mixin purpose
+    section#block1.purpose 
+        img.purpose__number(src="assets/images/general/1.svg", alt="Номер задания 1")
+        h2.block__header.purpose__header Что ты хочешь получить в результате креативной сессии?
+        .purpose__input-field
+            textarea#purpose_input.block__input.purpose__input(name="purpose", maxlength="1000", height="50px",oninput="countChars('purpose_input')",placeholder="Например, я хочу придумать 3 новые рубрики для развития социальных сетей коммуникационного агентства. Наше агентство разрабатывает коммуникационные стратегии создаёт нестандартные решения для развития брендов (ивенты, мерч, спецпроекты)")
+            output#purpose_input_out.purpose__output <span id="count_purpose_input">0</span>/1000
+        button.btn.purpose__btn.save-btn сохранить
+        img.dots_back(src="assets/images/general/dots_back.svg", alt="")
+        textarea.purpose__notes.block__note(name="purpose_note",maxlength="150", placeholder="Ты можешь оставлять заметки на этих полях")
+        .block_hints.purpose__hints(onclick="closerHint('purpose')")
+            p Поразмышляй, что будет результатом сегодняшней работы. Можешь добавить числовые или смысловые показатели.
+            img.block_hints-cross(src="assets/images/general/X.svg")
+        img.purpose__hints--small(src="assets/images/general/little-yellow-sticker.svg" onclick="sizerHint('purpose')")
+        span.purpose__hints_text--small(onclick="sizerHint('purpose')") Подсказка
+        img.purpose__tape(src="assets/images/general/tape.svg", alt="")

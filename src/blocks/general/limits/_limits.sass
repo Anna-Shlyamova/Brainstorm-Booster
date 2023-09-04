@@ -1,0 +1,84 @@
+.limits
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  margin-bottom: 308px
+  &__btn
+    padding: 10px 72px 10px 58px
+  &__input-field
+    position: relative
+    z-index: 1
+  &__input
+    width: $input-width
+    height: 140px
+    margin-bottom: 10px
+    font-family: "Montserrat"
+    font-weight: 400
+  &__output
+    display: none
+    position: absolute
+    bottom: 12px
+    right: 20px
+    font-family: "Montserrat"
+    font-weight: 400
+    color: #ACACAC
+  &__header
+    padding-left: 20px
+    width: 696px
+    margin-bottom: 5px
+  &__text-box
+    margin-bottom: 15px
+  &__text
+    padding-left: 20px
+    line-height: 19.5px
+    width: 696px
+  &__number
+    position: absolute
+    z-index: 2
+    top: 4px
+    left: -45px
+  &__notes
+    position: absolute
+    width: 408px
+    height: 302px
+    bottom: -228px
+    left: -215px
+    padding-left: 51px
+    padding-right: 119px
+    padding-top: 64px
+    background: url("../images/general/dots_back_small.svg") no-repeat
+
+  &__hints
+    position: absolute
+    display: block
+    right: -270px
+    top: -40px
+    z-index: 1
+    padding-top: 88px
+    padding-right: 20px
+    padding-left: 35px
+    font-size: 24px
+    line-height: 24px
+    background-color: #FFEC44
+    transform: rotate(11.03deg)
+    p
+      font-family: "Festus"
+      transform: rotate(-4.84deg)
+    &--small
+      display: none
+    &_text--small
+      display: none
+
+  &__tape
+    position: absolute
+    display: block
+    right: -220px
+    top: -134px
+    z-index: 2
+    padding-top: 68px
+    padding-right: 20px
+    padding-left: 35px
+    font-size: 24px
+    line-height: 24px0
+    transform: rotate(0.2deg)

@@ -1,0 +1,56 @@
+//- Блок генерация идей: счетчик этапов
+mixin counter
+    section#block7.counter 
+        img.counter__number(src="assets/images/general/7.svg", alt="Номер задания 7")
+        h2.block__header.counter__header Генерация идей
+        p.block__text.counter__text.counter__text-first #[strong Ты проанализировал много исходных данных, а сейчас пришло время придумывать новые идеи. Подготовься к работе в несколько этапов.]
+        p.block__text.counter__text #[strong #[span(class="counter_span-text") 1]  этап]
+        p.block__text.counter__text.counter__chang-text #[ Впиши за 3 минуты форматы и тематики для твоей идеи. Формат — это то, в каком виде она будет реализована. А тематика — любые идеи, которые могут быть воплощены в разных форматах.]
+        img.counter__hints--small(src="assets/images/general/little-yellow-sticker.svg")
+        span.counter__hints_text--small Подсказка
+        .counter__stikers 
+                .counter_hints1._stiker
+                    img._stiker-scotch(src="assets/images/index/scotch.svg", alt="")
+                    img.block_hints-cross(src="assets/images/general/X.svg")
+                    p Например, формат — подкаст, интерактивная доска, аудиосообщения, статьи. Тематика — детские воспоминания, путешествия, еда, созвездия.
+                .counter_hints2._stiker
+                    img._stiker-scotch(src="assets/images/index/scotch.svg", alt="")
+                    img.block_hints-cross(src="assets/images/general/X.svg")
+                    p Например, статьи про еду, интерактивная доска с путешествиями, аудиосообщения про созвездия.
+                .counter_hints3._stiker
+                    img._stiker-scotch(src="assets/images/index/scotch.svg", alt="")
+                    img.block_hints-cross(src="assets/images/general/X.svg")
+                    p Дружелюбный нетворкинг на доске MIRO, где коммуникаторы деляться своими туристическими маршрутами и находят друзей по интересам с помощью нашего агентства.
+        .counter__entry-fields_container
+            .counter__entry-fields
+                .textarea-format.counter__textarea.textarea-format
+                    textarea#format.block__input(maxlength="1000", oninput="countChars('format')",placeholder="Формат")
+                    output#format_out.counter__output <span id="count_format">0</span>/1000
+                .textarea-themes.counter__textarea.textarea-themes
+                    textarea#theme.block__input(maxlength="1000", oninput="countChars('theme')",placeholder="Тематика")
+                    output#theme_out.counter__output <span id="count_theme">0</span>/1000
+                .counter__textarea.counter__textarea-block.textarea-ideas
+                    .counter__textarea-idea.block-idea1
+                        textarea#idea1.block__input(maxlength="1000", oninput="countChars('idea1')",placeholder="1 идея")
+                        output#idea1_out.counter__output <span id="count_idea1">0</span>/1000
+                    .counter__textarea-idea.block-idea2
+                        textarea#idea2.block__input(maxlength="1000", oninput="countChars('idea2')",placeholder="2 идея")
+                        output#idea2_out.counter__output <span id="count_idea2">0</span>/1000
+                    .counter__textarea-idea.block-idea3
+                        textarea#idea3.block__input(maxlength="1000", oninput="countChars('idea3')",placeholder="3 идея")
+                        output#idea3_out.counter__output <span id="count_idea3">0</span>/1000
+                .counter__textarea.counter__textarea-block.textarea-comments
+                    .counter__textarea-comment.block-comment1
+                        textarea#idea-desc1.block__input(maxlength="1000", oninput="countChars('idea-desc1')",placeholder="Просто начни писать :)")
+                        output#idea-desc1_out.counter__output <span id="count_idea-desc1">0</span>/1000
+                    .counter__textarea-comment.block-comment2
+                        textarea#idea-desc2.counter__textarea-comment.block__input(maxlength="1000", oninput="countChars('idea-desc2')")
+                        output#idea-desc2_out.counter__output <span id="count_idea-desc2">0</span>/1000
+                    .counter__textarea-comment.block-comment3
+                        textarea#idea-desc3.counter__textarea-comment.block__input(maxlength="1000", oninput="countChars('idea-desc3')")
+                        output#idea-desc3_out.counter__output <span id="count_idea-desc3">0</span>/1000
+        textarea.counter__notes.block__note(name="purpose_note", maxlength="150",placeholder="Ты можешь оставлять заметки на этих полях")
+        .counter__buttons
+            button.btn.counter__btn_back назад
+            button.btn.counter__btn_next далее
+

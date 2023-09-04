@@ -1,0 +1,145 @@
+.container-emotions
+    display: flex
+    justify-content: center
+    max-width: 1210px
+    margin: 0px auto
+    background-image: url("../images/general/emotions/rectangle.svg")
+    background-position: 0px 100px
+    background-repeat: no-repeat 
+
+.emotions__content-header
+    display: flex
+    max-width: 790px
+    margin: 0px auto
+    min-height: 120px
+
+.emotions
+  margin-bottom: 293px
+  &__number
+    position: relative
+    z-index: 2
+.emotions__header
+  padding-left: 5px
+  margin-bottom: 5px
+.emotions__text-box
+    margin-top: 10px
+    padding-left: 5px
+    .emotions__text
+        width: 100%
+
+.emotions__block
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    margin-top: 60px
+    margin-left: 80px
+
+.emotions__options
+  display: flex
+
+  background-color: $white
+  label
+    display: flex
+    width: 100%
+    height: 100%
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    font-size: 16px
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+  input
+    appearance: none
+
+.emotions__items
+    max-width: 992px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    gap: 15px 10px
+    padding: 75px 65px
+
+.emotions__item
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 160px
+  height: 40px
+  label
+    padding: 0px 9px
+  &:first-child
+    border: 1px solid $green
+    input:checked + label
+      background-color: $green
+
+  &:nth-child(n+2)
+    border: 1px solid $red
+    input:checked + label
+      background-color: $red
+
+  &:nth-child(2n+3)
+    border: 1px solid $green
+    input:checked + label
+      background-color: $green
+
+  &:nth-child(3n+4)
+    border: 1px solid #FFC000
+    input:checked + label
+      background-color: #FFC000
+
+.emotions__self-value
+  display: flex
+  width: 232px
+  height: 42px
+  margin-top: 10px
+  padding: 10px 22px
+  border: none
+  outline: none
+  background-color: #F2F2F2
+
+.emotions-bg
+  background-color: $green
+  color: #222222
+
+.emotions__btn
+  margin-top: 20px
+
+.emotions__hints
+  display: block
+  width: 222px
+  height: 222px
+  position: absolute
+  top: -45px
+  left: -210px
+  transform: rotate(13deg)
+  padding-top: 55px
+  p
+    margin-left: 20px
+    transform: rotate(-10deg)
+  &--small
+    display: none
+  &_text--small
+    display: none    
+
+.emotions__notes
+  width: 342px
+  height: 253px
+  position: absolute
+  z-index: 1
+  top: 450px
+  left: 100px
+  padding: 35px 55px 20px 55px
+  background-color: rgba(255, 255, 255, 0.0)
+  &:placeholder
+    line-height: 4em
+
+.emotions__dots_back
+  position: absolute
+  top: 410px
+  left: 100px
+  z-index: -3
+  background: #ffffff94
+  box-shadow: 0 0 30px #ffffff

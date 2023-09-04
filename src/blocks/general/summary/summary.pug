@@ -1,0 +1,15 @@
+mixin summary 
+    section.summary
+        img.summary__paper(src="assets/images/general/Summary_back.svg", alt="")
+        img.summary__paper_mobile(src="assets/images/general/paper_mobile.svg", alt="")
+        .summary__text-box
+            h2.block__header.summary__header У тебя остались несохраненные этапы.
+            img.summary__marker(src="assets/images/general/marker_summary.svg", alt="")
+            p.block__text.summary__text Тебе необходимо вернуться и завершить начатое.
+            p.summary__luck Удачи тебе! =)
+        .button__save
+            button.btn.summary__btn.return__btn(type="button" id="btn-returnToEmpty") ОК
+            button.btn.summary__btn.save__btn(type="button" id="btn-save") перейти к документу
+        .block_hints.summary__hints
+            p Если ты хочешь закончить сессию, жми - ОК
+        img.summary__tape(src="assets/images/general/tape.svg", alt="")

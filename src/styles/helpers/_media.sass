@@ -1,0 +1,2410 @@
+@media screen and (max-width: 1300px)
+    $input-width: 570px
+    .container-bg
+        background-position: center 172px
+    .container //- контейнер для всего содержимого файла
+        max-width: 1024px
+        margin-top: -17%
+    .content-container //- контейнер для блоков
+        max-width: $input-width
+    .block__text
+        font-size: 16px
+    .block__input //-ввод текста, общие стили
+        font-size: 16px
+    .btn
+        width: 190px
+        height: 34px
+        font-size: 16px
+    .block__note //-поля для заметок, общие стили
+        font-size: 20px
+    .block_hints //-стикеры, общие стили
+        width: 184px
+        height: 184px
+    .intro
+        width: $input-width
+        margin-bottom: 100px
+        &__text
+            font-size: 16px     
+    .trends
+        margin-bottom: 270px
+        &__number
+            height: 102px
+        &__header
+            width: $input-width
+        &__input
+            width: $input-width
+            height: 114px
+        &__text
+            width: $input-width
+        &__btn
+            padding: 7px 52px
+    .trends-group__notes
+        width: 195px
+        top: 131px
+        left: 597px
+    .trends-group__tape
+        width: 442px
+        height: 383px
+        bottom: -139px
+        right: -222px
+    .purpose
+        margin-bottom: 230px
+        &__number
+            height: 102px
+        &__header
+            width: $input-width
+        &__input
+            width: $input-width
+            height: 150px
+        &__text
+            width: $input-width
+        &__tape
+            display: block
+            right: -90px
+            top: -95px
+            z-index: 2
+            transform: rotate(7.23deg) 
+        &__hints
+            right: -195px
+            top: -54px
+            width: 208px
+            height: 208px
+            z-index: 2
+            padding-top: 60px
+            padding-right: 0
+            padding-left: 23px
+            font-size: 20px
+            transform: rotate(-9.97deg)
+        &__notes
+            width: 333px
+            height: 246px
+            bottom: -142px
+            left: -167px
+            padding-left: 58px
+            padding-right: 67px
+            padding-top: 80px
+        &__btn
+            padding: 7px 52px
+    .values
+        margin-bottom: 275px
+        &__number
+            height: 102px
+        &__header
+            width: $input-width
+        &__input
+            width: $input-width
+            height: 340px
+            font-size: 14px
+        &__hints
+            right: -200px
+            top: 14px
+            width: 208px
+            height: 208px
+            padding-top: 20px
+            padding-right: 0
+            padding-left: 9px
+            font-size: 18px
+            transform: rotate(2.8deg)
+        &__notes
+            width: 280px
+            height: 207px
+            bottom: -142px
+            left: -237px
+            padding-left: 58px
+            padding-right: 40px
+            padding-top: 80px    
+        &__tape__1
+            display: block
+            right: 180px
+            top: -34px
+        &__tape__2
+            display: block
+            right: -3px
+            top: 168px             
+        &__text
+            width: $input-width         
+        &__btn
+            padding: 7px 52px
+        &__back
+            width: 342px
+            height: 253px
+            top: 117px
+            left: -341px
+    .container-emotions
+      background-image: none
+      
+    .emotions
+        margin-bottom: 720px
+        height: 100%
+        &__content-header
+          margin-bottom: 20px
+          max-width: 580px
+        &__number
+            height: 102px
+        &__header
+            max-width: $input-width
+        &__block
+            margin: 0
+            padding: 20px
+            background-color: #FC4545
+        &__items
+          position: relative
+          max-width: 800px
+          padding: 50px
+          justify-content: space-between
+          gap: 16px 10px
+          
+        &__item
+            width: 130px
+            height: 33px
+            padding: 0 0
+            label
+                padding: 0 5px
+        &__options
+            width: 100%
+            label
+                font-size: 15px
+        &__notes
+            width: 280px
+            height: 100%
+            // bottom: -142px
+            top: 100%
+            left: 142px
+            padding-left: 28px
+            padding-right: 57px
+            padding-top: 60px
+        &__dots_back
+            // top: 470px
+            top: 100%
+            left: 100px
+        &__self-value
+            padding: 10px
+            width: 128px
+            height: 32px
+            bottom: -40px
+            right: -50px
+        &__hints
+            display: none
+            left: 40%
+            top: 60px
+            width: 183px
+            height: 187px
+            z-index: 1
+            padding-top: 20px
+            padding-right: 0
+            padding-left: 23px
+            font-size: 18px
+            transform: rotate(-9.97deg)
+            p
+              height: 100%
+            &--small
+                display: block
+                position: absolute
+                right: 15px
+                top: -15px
+                z-index: 2
+            &_text--small
+                display: block
+                position: absolute
+                right: 36px
+                top: 32px
+                z-index: 3
+                font-family: $stikers-font
+                font-size: 15px
+                transform: rotate(-7.23deg)
+        &__btn
+            margin-top: 20px
+            padding: 7px 52px
+    .target-group
+        margin-bottom: 275px        
+        &__number
+            height: 102px
+        &__header
+            width: $input-width        
+        &__btn--red
+            width: 570px
+            display: block
+            padding: 10px 50px 10px 50px 
+            z-index: 1   
+        &__btn
+            z-index: 1           
+        &__input-table
+            width: $input-width
+            grid-template-rows: repeat(2, 158px)
+            grid-gap: 16px 19px
+            z-index: 1
+        &__input
+            &::placeholder
+                padding-left: 83px
+                padding-top: 50px
+            &--right
+                &::placeholder
+                    padding-left: 83px
+        &__text
+            width: $input-width        
+        &__tape
+            display: block
+            left: -150px
+            top: 123px
+            z-index: 2
+            transform: rotate(7.23deg) 
+        &__hints
+            left: -206px
+            top: 159px
+            width: 208px
+            height: 208px
+            z-index: 1
+            padding-top: 30px
+            padding-right: 8px
+            padding-left: 36px
+            font-size: 20px
+            transform: rotate(-9.97deg)    
+        &__notes
+            width: 345px
+            height: 372px   
+            z-index: 0
+            top: 115px
+            right: -222px         
+            padding-left: 147px
+            padding-right: 18px
+            padding-top: 80px
+            &-back
+                display: none
+            &-back--small
+                display: block
+                position: absolute
+                width: 345px
+                height: 372px   
+                z-index: -1
+                top: 115px
+                right: -222px  
+        &__round
+            top: 121px
+            left: 241px
+            width: 82px
+            height: 82px
+            border-radius: 82px
+            font-size: 20px
+        &__btn
+            padding: 7px 52px
+    .limits
+        margin-bottom: 275px
+        &__number
+            height: 102px
+        &__header
+            width: $input-width
+        &__input
+            width: $input-width
+            height: 140px
+        &__text
+            width: $input-width
+        &__hints
+            right: -190px
+            top: 54px
+            padding-top: 60px
+            padding-right: 0
+            padding-left: 23px
+            font-size: 20px
+        &__tape
+            display: block
+            right: -169px
+            top: -54px
+        &__notes
+            width: 280px
+            height: 207px
+            bottom: -142px
+            left: -167px
+            padding-left: 28px
+            padding-right: 57px
+            padding-top: 40px
+    .value-proposition
+        margin-bottom: 233px
+        &__number
+            height: 102px
+        &__btn--red
+            width: 190px
+        &__header
+            width: $input-width
+        &__text
+            width: $input-width
+        &__input-table
+            width: $input-width
+            grid-template-rows: repeat(2, 158px)
+            grid-gap: 17px 19px
+        &__input
+            padding: 15px 0px 0 40px
+            &--left
+                padding: 15px 25px 0 15px
+        &__output
+            &--left
+                bottom: 2px
+        &__round
+            top: 122px
+            left: 244px
+            width: 82px
+            height: 82px
+            border-radius: 82px
+            font-size: 20px
+        &__hints
+            top: 110px
+            right: -204px
+            padding-top: 60px
+            font-size: 20px
+        &__tape
+            top: 77px
+            right: -165px
+        &__notes
+            width: 280px
+            height: 207px
+            left: -219px
+            top: 381px
+            padding-left: 45px
+    .summary
+        &-container
+            width: 934px
+        &__paper
+            width: 934px
+        &__text-box 
+            width: 934px
+            padding: 0 180px
+            margin-bottom: 90px
+        &__header
+            margin-bottom: 35px
+            font-size: 25px
+        &__marker
+            width: $input-width
+            left: 190px
+            top: 141px
+        &__luck
+            top: 212px
+            left: 581px
+        &__btn
+            width: 205px
+            padding: 9px 11px
+        &__hints
+            font-size: 20px
+            right: 558px
+            top: 217px
+            padding-top: 40px
+            padding-right: 15px
+            padding-left: 15px
+        &__tape
+            right: 615px
+            top: 184px
+    .conclusion
+        margin-bottom: 164px
+        &__header
+            width: $input-width
+        &__input
+            width: $input-width
+            height: 120px
+    .footer
+        &__container
+            max-width: 1024px
+            padding-top: 80px
+            font-size: 12px
+            ul
+                margin-top: 15px
+        &__info
+            margin: 0px 12% 79px
+            &-logo
+                height: 54px
+            &-yoootime
+                height: 17px
+    .counter
+        margin-bottom: 230px
+        &__number
+            height: 102px
+        &__text
+            font-size: 16px
+        &__chang-text
+            &::after
+                background: url("../images/general/counter/marker.svg") left/75% no-repeat
+        textarea.counter__notes
+            padding: 25px
+            bottom: 5%
+            left: 100%
+            width: 225px
+            height: 207px
+        &__output
+            font-size: 16px
+        &__stikers
+            top: 38%
+            right: 135%
+    ._stiker
+        width: 210px
+        height: 210px
+        font-size: 18px
+        line-height: 95%
+        padding-top: 10px
+        padding-left: 19px
+@media screen and (max-width: 960px)
+    $input-width: 510px
+    .container-bg
+        background-image: url("../images/general/background_small.svg")
+        background-size: 100% 110%
+        background-repeat: no-repeat
+        background-position: center 178px
+    .container //- контейнер для всего содержимого файла
+        max-width: 768px
+        margin-top: -25%
+    .content-container //- контейнер для блоков
+        max-width: $input-width
+    .block__header
+        font-size: 20px
+    .block__text
+        font-size: 14px
+    .block__input //-ввод текста, общие стили
+        font-size: 14px
+    .btn
+        width: 170px
+        height: 31px
+        font-size: 14px
+    .block__note //-поля для заметок, общие стили
+        font-size: 20px
+    .block_hints //-стикеры, общие стили
+        width: 168px
+        height: 168px
+        &-cross
+            display: block
+    .header
+        height: 45px
+        padding: 0px 50px
+        a
+            font-size: 12px
+    ._lang
+        width: 32px
+        height: 20px
+    .intro
+        width: $input-width
+        margin-top: 25%
+        margin-bottom: 50px
+        &__text
+            font-size: 16px
+    .trends
+        margin-bottom: 205px
+        &__number
+            height: 93px
+            top: 4px
+            left: -27px
+        &__header
+            width: $input-width
+        &__input
+            width: $input-width
+            height: 103px
+        &__text
+            width: $input-width
+        &__btn
+            padding: 6px 47px
+    .trends-group__notes
+        width: 177px
+        top: 237px
+        left: 13px
+    .trends-group__tape
+        display: none
+        &--small
+            display: block
+            position: absolute
+            bottom: -186px
+            right: 271px
+            width: 276px
+            height: 271px
+            z-index: -1
+    .purpose
+        margin-bottom: 205px
+        &__number
+            height: 93px
+            top: 4px
+            left: -19px
+        &__header
+            width: $input-width
+        &__input
+            width: $input-width
+            height: 116px
+            line-height: normal
+        &__text
+            width: $input-width
+        &__tape
+            display: none
+            right: 90px
+            top: -50px
+        &__notes
+            width: 302px
+            height: 224px
+            bottom: -126px
+            left: -25px
+            padding-left: 28px
+            padding-right: 57px
+            padding-top: 110px
+        .dots_back
+            width: 330px
+            height: 224px
+            left: -88px
+            top: 115px    
+        &__hints
+            display: none
+            right: 15px
+            top: -12px
+            padding-top: 25px
+            padding-right: 0
+            padding-left: 18px
+            font-size: 20px
+            line-height: 100%
+            z-index: 2
+            &--small
+                display: block
+                position: absolute
+                right: -5px
+                top: -15px
+                z-index: 2
+            &_text--small
+                display: block
+                position: absolute
+                right: 15px
+                top: 30px
+                z-index: 2
+                font-family: $stikers-font
+                font-size: 15px
+                transform: rotate(-19.432deg)                
+    .values
+        margin-bottom: 205px
+        &__number
+            height: 93px
+            top: 4px
+            left: -30px
+        &__header
+            width: $input-width
+        &__input
+            width: $input-width
+            height: 275px
+            font-size: 14px
+            line-height: normal
+        &__text
+            width: $input-width
+        &__tape1
+            display: none
+            right: -78px
+            top: -49px
+        &__tape2
+            display: none
+            right: 0px
+            top: -60px
+        &__hints
+            display: none
+            width: 212px
+            height: 216px
+            right: 15px
+            top: 32px
+            padding-top: 25px
+            padding-right: 0
+            padding-left: 18px
+            font-size: 18px
+            transform: rotate(-7.62deg)
+            &--small
+                display: block
+                position: absolute
+                right: -5px
+                top: 25px
+                z-index: 2
+            &_text--small
+                display: block
+                position: absolute
+                right: 15px
+                top: 68px
+                z-index: 2
+                font-family: $stikers-font
+                font-size: 15px
+                transform: rotate(-7.23deg)              
+        .dots_back
+            width: 330px
+            height: 224px
+            left: -90px
+            top: 320px 
+        &__notes
+            width: 302px
+            height: 224px
+            bottom: -126px
+            left: -30px
+            top: 320px
+            padding-left: 28px
+            padding-right: 57px
+            padding-top: 100px
+    .target-group
+        margin-bottom: 205px
+        &__number
+            height: 93px
+            top: 4px
+            left: -29px
+        &__header
+            width: $input-width        
+        &__text
+            width: $input-width
+        &__btn--red
+            width: $input-width            
+            display: block
+            padding: 10px 50px 10px 50px        
+        &__input-table
+            width: $input-width
+            grid-template-rows: repeat(2, 144px)
+            grid-gap: 15px 17px
+        &__tape
+            display: none
+            left: 350px
+            top: -30px
+            z-index: 2
+            transform: rotate(7.23deg)
+        &__round
+            top: 115px
+            left: 218px
+            width: 73px
+            height: 73px
+            border-radius: 73px
+            font-size: 16px
+        &__hints
+            display: none
+            left: 300px
+            top: 5px
+            width: 183px
+            height: 187px
+            z-index: 1
+            padding-top: 20px
+            padding-right: 0
+            padding-left: 23px
+            font-size: 18px
+            transform: rotate(-9.97deg)
+            &--small
+                display: block
+                position: absolute
+                right: -5px
+                top: -55px
+                z-index: 2
+            &_text--small
+                display: block
+                position: absolute
+                right: 15px
+                top: -10px
+                z-index: 2
+                font-family: $stikers-font
+                font-size: 15px
+                transform: rotate(-7.23deg)         
+        &__notes
+            width: 277px
+            height: 271px
+            bottom: -142px
+            top: 360px
+            left: -70px
+            z-index: 0           
+            padding-left: 65px
+            padding-right: 30px
+            padding-top: 140px
+        &__notes-back
+            display: block
+            position: absolute
+            width: 277px
+            height: 271px 
+            z-index: -1
+            top: 360px
+            left: -70px
+            &--small
+                display: none
+    .emotions__number
+      height: 93px
+    .limits
+        margin-bottom: 205px
+        &__number
+            height: 93px
+            top: 5px
+            left: -32px
+        &__header
+            width: $input-width
+        &__input
+            width: $input-width
+            height: 104px
+        &__text
+            width: $input-width
+        &__hints
+            display: none
+            right: 30px
+            top: 52px
+            padding-top: 40px
+            padding-right: 0
+            padding-left: 18px
+            font-size: 18px
+            &--small
+                display: block
+                position: absolute
+                right: 0px
+                top: 0px
+                z-index: 2
+            &_text--small
+                display: block
+                position: absolute
+                right: 20px
+                top: 45px
+                z-index: 2
+                font-family: $stikers-font
+                font-size: 15px
+                transform: rotate(-19.432deg)
+        &__tape
+            display: none
+            right: 40px
+            top: -49px
+        &__notes
+            width: 302px
+            height: 224px
+            bottom: -126px
+            left: -81px
+            padding-left: 28px
+            padding-right: 57px
+            padding-top: 100px
+    .value-proposition
+        margin-bottom: 163px
+        &__number
+            height: 93px
+            top: 3px
+            left: -34px
+        &__btn--red
+            width: 170px
+        &__header
+            width: $input-width
+        &__text
+            width: $input-width
+        &__input-table
+            width: $input-width
+            grid-template-rows: repeat(2, 144px)
+            grid-gap: 16px 18px
+        &__input
+            padding: 15px 0px 0 30px
+            &--left
+                padding: 15px 19px 0 15px
+        &__output
+            &--left
+                bottom: 2px
+        &__round
+            top: 118px
+            left: 221px
+            width: 74px
+            height: 74px
+            border-radius: 74px
+            font-size: 16px
+        &__hints
+            display: none
+            top: 129px
+            right: 30px
+            padding-top: 60px
+            font-size: 20px
+            z-index: 2
+            &--small
+                display: block
+                position: absolute
+                right: -5px
+                top: 70px
+                z-index: 2
+            &_text--small
+                display: block
+                position: absolute
+                right: 15px
+                top: 115px
+                z-index: 2
+                font-family: $stikers-font
+                font-size: 15px
+                transform: rotate(-19.432deg)
+        &__tape
+            display: none
+            top: 100px
+            right: 70px
+            z-index: 2
+        &__notes
+            width: 303px
+            height: 224px
+            left: -83px
+            top: 381px
+            padding-top: 100px
+            padding-left: 45px
+    .conclusion
+        margin-bottom: 80px
+        &__header
+            width: $input-width
+        &__input
+            width: $input-width
+            height: 104px
+            line-height: 1.2em
+    .summary
+        margin-bottom: 0
+        &-container
+            width: 100%
+            margin-bottom: 14px
+            background-image: url("../images/general/Summary_back.svg")
+            background-size: 100%
+            background-repeat: no-repeat
+        &__paper
+            display: none
+        &__text-box
+            width: 100%
+            margin: 60px 0 80px 0
+            padding: 0 120px 0 150px
+        &__header
+            margin-bottom: 30px
+            font-size: 20px
+        &__marker
+            width: $input-width
+            left: 135px
+            top: 103px
+        &__luck
+            font-size: 25px
+            top: 167px
+            left: 470px
+        &__btn
+            width: 185px
+            padding: 9px 11px
+        &__hints
+            font-size: 18px
+            left: 160px
+            top: 183px
+            padding-top: 30px
+            padding-right: 15px
+            padding-left: 15px
+        &__tape
+            left: 226px
+            top: 152px
+    .footer
+        &__container
+            max-width: 768px
+            padding-top: 65px
+        &__info
+            margin: 0px 12% 65px
+            &-logo
+                height: 44px
+            &-yoootime
+                height: 14px
+    .counter
+        positin: relative
+        margin-bottom: 210px
+        &__number
+            height: 93px
+            top: 2px
+            left: -32px
+            z-index: 3
+        &__text
+            max-width: 400px
+            font-size: 14px
+        &__chang-text
+            &::after
+                background: url("../images/general/counter/marker.svg") left/75% no-repeat
+                width: $input-width
+        &__btn_back
+            z-index: 2
+        textarea.counter__notes
+            padding-top: 95px
+            bottom: -29%
+            left: -8%
+            width: 240px
+            height: 207px
+            background: url("../images/general/grid_back.svg") no-repeat
+        &__entry-fields
+            position: relative
+            z-index: 2
+            height: 318px
+        &__output
+            font-size: 14px
+        &__stikers
+            display: none
+            top: 35%
+            right: 45%
+            z-index: 3
+        &__hints
+            &--small
+                display: block
+                position: absolute
+                right: -0px
+                top: 8%
+                z-index: 2
+            &_text--small
+                display: block
+                position: absolute
+                right: 20px
+                top: 15%
+                z-index: 2
+                font-family: $stikers-font
+                font-size: 15px
+                transform: rotate(-19.432deg)
+    ._stiker
+        width: 210px
+        height: 210px
+        font-size: 18px
+        line-height: 95%
+        padding-top: 10px
+        padding-left: 19px
+
+@media screen and (max-width: 1010px)
+    .trends-group__notes
+        width: 177px
+        top: 247px
+        left: 73px
+    .trends-group__tape
+        display: none
+        &--small
+            display: block
+            position: absolute
+            bottom: -186px
+            right: 271px
+            width: 276px
+            height: 271px
+            z-index: -1
+@media screen and (max-width: 768px)
+    .container
+        max-width: 768px
+    .emotions__content-header
+        padding-left: 15px
+        padding-right: 15px
+    .nav
+        width: 100%
+        &__list
+            flex-direction: row
+            justify-content: space-between
+            padding-top: 14px
+            border-radius: 0 0
+        &__item
+            margin-bottom: 14px
+    .intro
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 85%
+        &__text
+            width: 70vw
+            background: #ffffff94
+            box-shadow: 15px -5px 30px #ffffff
+@media screen and (max-width: 690px)
+  .emotions__notes
+    top: 100%
+  .emotions__dots_back
+    top: 100%
+@media screen and (max-width: 560px)
+  .emotions__dots_back
+    display: none
+  .emotions__notes
+    display: none
+
+@media screen and (max-width: 576px)
+    $input-width: 280px
+
+    .container-bg
+        background-image: url("../images/general/background-430.svg")
+        background-size: 100% 100%
+        background-position: center 98px
+    .container //- контейнер для всего содержимого файла
+        max-width: 320px
+        margin-top: 0
+    .content-container //- контейнер для блоков
+        max-width: $input-width
+        .intro
+            padding-top: 20px
+            padding-left: 20px
+            padding-right: 0
+    .block__header
+        font-size: 14px
+    .block__text
+        font-size: 12px
+        line-height: 100%
+    .block__input //-ввод текста, общие стили
+        font-size: 12px
+        line-height: normal
+    .btn
+        width: $input-width
+        height: 38px
+        font-size: 12px
+        &:hover
+            color: $white
+            background-color: #222222
+            border: none
+        &:active
+            color: #222222
+            background-color: $white
+            border: 1px solid #222222
+        &--red
+            &:hover
+                color: $white
+                background-color: $red
+                border: none
+    .block__note //-поля для заметок, общие стили
+        display: none
+    .block_hints //-стикеры, общие стили
+        width: 205px
+        height: 205px
+    .header
+        height: 30px
+        padding: 0px 28px
+        a
+            font-size: 12px
+    .header__text
+        font-size: 8px
+    ._lang
+        width: 32px
+        height: 20px
+    .intro
+        width: $input-width
+        margin-top: 102px
+        margin-left: 0
+        margin-bottom: 75px
+        padding-right: 40px
+        &__text
+            font-size: 12px
+    .target-group
+        margin-bottom: 75px
+        &__number
+            height: 41px
+            top: 2px
+            left: -3px
+        &__header
+            width: $input-width        
+        &__text
+            width: $input-width
+            padding-right: 67px
+        &__btn--red
+            width: $input-width            
+            display: block
+            padding: 10px 50px 10px 50px   
+        &__output
+            font-size: 12px
+            right: 15px
+            &--left
+                right: 15px     
+        &__input
+            padding: 20px 5 0 25px
+            margin-bottom: 0
+            &::placeholder
+                padding-left: 21px
+                padding-top: 11px
+            &--right
+                padding-left:20px
+                &::placeholder
+                    padding-left: 25px
+            &-table
+                width: $input-width
+                grid-template-rows: none
+                grid-gap: 8px 9px
+                grid-template-rows: repeat(2, 78px)
+        &__notes
+            &-back
+                display: none
+        &__tape
+            display: none
+            left: 91px
+            top: 20px
+            z-index: 2
+            transform: rotate(7.23deg)
+        &__round
+            top: 62px
+            left: 119px
+            width: 40px
+            height: 40px
+            border-radius: 40px
+            font-size: 12px
+        &__hints
+            display: none
+            left: 44px
+            top: 60px
+            width: 183px
+            height: 187px
+            z-index: 1
+            padding-top: 20px
+            padding-right: 0
+            padding-left: 23px
+            font-size: 18px
+            transform: rotate(-9.97deg)
+            &--small
+                display: block
+                position: absolute
+                right: -13px
+                top: 3px
+                z-index: 2
+            &_text--small
+                display: block
+                position: absolute
+                right: 6px
+                top: 50px
+                z-index: 2
+                font-family: $stikers-font
+                font-size: 15px
+                transform: rotate(-7.23deg)
+        &__btn
+            &--ready
+                width: $input-width
+                margin-top: 55px
+    .trends
+        margin-bottom: 75px
+        &__number
+            height: 41px
+            top: 2px
+            left: -2px
+        &__header
+            width: $input-width
+        &__input
+            width: $input-width
+            height: 95px
+        &__output
+            font-size: 12px
+        &__text
+            width: $input-width
+        &__btn
+            padding: 12px 106px
+    .trends-group__tape
+        display: none
+        &--small
+            display: none
+    .purpose
+        margin-bottom: 75px
+        &__number
+            height: 41px
+            top: 2px
+            left: -2px
+        &__header
+            width: $input-width
+            padding-right: 67px
+        &__input
+            width: $input-width
+            height: 155px
+        &__output
+            font-size: 12px
+        .dots_back
+            display: none
+        &__tape
+            display: none
+            right: 140px
+            top: -19px
+        &__hints
+            display: none
+            right: 55px
+            top: 22px
+            padding-top: 40px
+            padding-right: 10px
+            padding-left: 18px
+            font-size: 20px
+            z-index: 2
+            &--small
+                display: block
+                position: absolute
+                right: -17px
+                top: -19px
+                z-index: 2
+            &_text--small
+                display: block
+                position: absolute
+                right: 4px
+                top: 25px
+                z-index: 2
+                font-family: $stikers-font
+                font-size: 15px
+                transform: rotate(-19.432deg)
+    .values
+        margin-bottom: 75px
+        &__number
+            height: 41px
+            top: 2px
+            left: -2px
+        &__header
+            width: $input-width
+        &__input
+            width: $input-width
+            height: 331px
+            padding-top: 10px
+        &__output
+            font-size: 12px
+        &__text
+            width: $input-width
+            padding-right: 74px
+        .dots_back
+            display: none
+        &__tape
+            display: none
+            right: 80px
+            top: -39px
+        &__hints
+            display: none
+            width: 212px
+            height: 216px
+            right: 29px
+            top: 132px
+            padding-top: 25px
+            padding-right: 0
+            padding-left: 18px
+            font-size: 18px
+            transform: rotate(-15.19deg)
+            &--small
+                display: block
+                position: absolute
+                right: -4px
+                top: 13px
+                z-index: 2
+            &_text--small
+                display: block
+                position: absolute
+                right: 15px
+                top: 57px
+                z-index: 2
+                font-family: $stikers-font
+                font-size: 15px
+                transform: rotate(-7.23deg)
+    .container-emotions
+      width: 100%
+      justify-content: center
+      &::after
+        display: none
+    .emotions
+        width: 100%
+        height: 100%
+        margin-bottom: 50px
+        &::after
+            left: -26%
+            width: 151.3%
+            height: 313px
+            margin-top: 20px    
+            background-color: $red
+        .emotions__content-header
+          justify-content: center
+          margin-bottom: 0
+          .emotions__number
+              height: 41px
+              top: 5px
+              left: -5px
+          .emotions__content-title
+            background: #ffffff94
+            box-shadow: 15px -5px 30px #ffffff
+          .emotions__text-box
+            height: 70px
+            margin-bottom: 0px 
+          .emotions__text
+              width: 250px
+              height: 100%
+              padding-bottom: 15px
+              display: flex
+              flex-direction: column
+              justify-content: center
+        &__header
+            width: $input-width
+            padding-bottom: 5px
+        &__block
+            width: 100%
+            height: 100%
+            padding: 5px
+            margin-left: 0
+            margin-top: 0
+        &__items
+          padding: 15px 5px
+          justify-content: space-around
+          background-color: #fff
+          
+        &__item
+            width: 130px
+            height: 30px
+            background-color: #fff
+            label
+                padding: 0 3px
+                font-size: 14px
+            &:nth-child(n+2)
+                border: 1px solid #FF9898
+                input:checked+label
+                    background-color: #FF9898
+            &:nth-child(2n+3)
+                border: 1px solid $green
+                input:checked + label
+                    background-color: $green
+            &:nth-child(3n+4)
+                border: 1px solid #FFC000
+                input:checked + label
+                    background-color: #FFC000
+        &__options
+            width: 100%
+            height: 100%
+            padding-top: 41px
+            padding-bottom: 20px
+            margin-top: 0
+            grid-template-columns: repeat(2, 1fr)
+            gap: 15px 11px
+            background: #FC4545
+        &__self-value
+            width: 130px
+            height: 31px
+            font-size: 13px
+        &__dots_back
+            display: none
+            width: 330px
+            height: 224px
+            left: 50px
+            top: 370px 
+        &__notes
+            display: none
+            width: 302px
+            height: 224px
+            left: 100px
+            top: 380px
+            padding-left: 28px
+            padding-right: 57px
+            padding-top: 100px
+        &__tape
+            display: block
+            margin-top: -430px
+            z-index: 1
+            transform: rotate(-7.23deg)     
+        &__hints
+            display: none
+            justify-content: center
+            align-items: center
+            width: 187px
+            height: 187px
+            left: 15%
+            top: 47px
+            font-size: 18px
+            transform: rotate(-7.62deg)
+            p
+                transform: rotate(0deg)
+            &--small
+                display: block
+                position: absolute
+                right: 15px
+                top: -35px
+                z-index: 2
+                transform: rotate(20deg)
+            &_text--small
+                position: absolute
+                display: flex
+                right: 35px
+                top: 10px
+                z-index: 3
+                font-family: $stikers-font
+                font-size: 15px
+                transform: rotate(20deg)
+        &__btn
+            max-width: 280px
+            margin: 0px auto
+
+    .limits
+        margin-bottom: 75px
+        &__number
+            height: 41px
+            top: 2px
+            left: -2px
+        &__header
+            width: $input-width
+        &__input
+            width: $input-width
+            height: 108px
+        &__output
+            font-size: 12px
+        &__text
+            width: 225px
+        &__hints
+            display: none
+            right: 44px
+            top: 52px
+            padding-top: 50px
+            padding-right: 21px
+            padding-left: 21px
+            font-size: 20px
+            &--small
+                width: 77px
+                display: block
+                position: absolute
+                right: -5px
+                top: 7px
+                z-index: 2
+                transform: rotate(25.957deg)
+            &_text--small
+                display: block
+                position: absolute
+                right: 9px
+                top: 41px
+                z-index: 2
+                font-family: $stikers-font
+                font-size: 14px
+                transform: rotate(-0.157deg)
+        &__tape
+            display: none
+            right: 80px
+            top: -49px
+    .counter
+        margin-bottom: 99px
+        &__number
+            height: 41px
+            top: 2px
+            left: -3px
+        &__text
+            width: $input-width - 75px
+            font-size: 12px
+            line-height: normal
+            padding-bottom: 0
+            &-first
+                width: $input-width - 20px
+                height: 75px
+        &__chang-text
+            &::after
+                top: 2px
+                left: 1px
+                background: url("../images/general/counter_marker_mobile.svg") left/90% no-repeat
+                width: $input-width
+        .counter__buttons
+            width: $input-width
+            gap: 8px
+        &__btn_back
+            width: 100%
+            &:active
+                color: $white
+                background-color: $red
+                border: none
+        &__btn_next
+            width: 100%
+            margin-left: 0
+        textarea.counter__notes
+            display: none
+        &__entry-fields
+            
+            height: 300px
+            &_container
+                overflow-x: scroll
+        .textarea-format
+            margin-right: 10px
+        &__output
+            font-size: 12px
+        &__stikers
+            display: none
+            top: 47%
+            right: 85%
+            z-index: 3
+        &__hints
+            &--small
+                right: -6px
+                top: 77px
+                transform: rotate(20.957deg)
+            &_text--small
+                right: 14px
+                top: 121px
+                transform: rotate(-0.157deg)
+    .block-none
+        display: none
+    ._stiker
+        width: 210px
+        height: 210px
+        font-size: 18px
+        line-height: 95%
+        padding-top: 10px
+        padding-left: 19px
+    .value-proposition
+        margin-bottom: 90px
+        &__number
+            height: 41px
+            top: 0
+            left: -4px
+        &__btn
+            &--red
+                width: $input-width
+            &--ready
+                width: $input-width
+                margin-top: 55px
+        &__header
+            width: $input-width
+        &__text
+            width: $input-width
+            padding-right: 40px
+        &__input-table
+            width: $input-width
+            grid-template-rows: repeat(2, 77px)
+            grid-gap: 8px 10px
+        &__input
+            padding: 10px 0px 0 10px
+            &--left
+                padding: 10px 10px 0 10px
+        &__output
+            font-size: 12px
+            right: 15px
+            &--left
+                bottom: 2px
+        &__round
+            top: 65px
+            left: 121px
+            width: 40px
+            height: 40px
+            border-radius: 40px
+            font-size: 12px
+        &__hints
+            display: none
+            top: 129px
+            right: 41px
+            padding-top: 60px
+            font-size: 20px
+            z-index: 2
+            transform: rotate(-12deg)
+            &--small
+                width: 77px
+                display: block
+                position: absolute
+                right: -20px
+                top: 2px
+                z-index: 2
+            &_text--small
+                display: block
+                position: absolute
+                right: -5px
+                top: 38px
+                z-index: 2
+                font-family: $stikers-font
+                font-size: 14px
+                transform: rotate(-19.432deg)
+        &__tape
+            display: none
+            top: 103px
+            right: 131px
+            z-index: 2
+            transform: rotate(-1deg)
+        &__notes
+            width: 303px
+            height: 224px
+            left: -83px
+            top: 381px
+            padding-top: 100px
+            padding-left: 45px
+    .conclusion
+        margin-bottom: 75px
+        &__header
+            width: $input-width
+        &__input
+            width: $input-width
+            height: 140px
+            line-height: normal
+        &__output
+            font-size: 12px
+    .summary
+        align-items: center
+        &-container
+            width: 100%
+            height: 397px
+            margin-bottom: 0
+            background-image: url("../images/general/paper_mobile.svg")
+            background-size: 100%
+            background-repeat: no-repeat
+        &__paper
+            display: none
+        &__text-box
+            width: 100%
+            margin-bottom: 50px
+            margin-top: 15%
+            padding: 0 15%
+        &__header
+            margin-bottom: 30px
+            font-size: 16px
+        &__marker
+            width: $input-width - 30px
+            height: 50px
+            left: 11px
+            top: 145px
+        &__luck
+            display: none
+        &__btn
+            width: 242px
+            padding: 11px 52px
+        &__hints
+            height: 121px
+            width: 121px
+            font-size: 15px
+            line-height: 100%
+            left: 52%
+            top: 60%
+            padding-top: 20px
+            padding-right: 5px
+            padding-left: 10px
+            transform: rotate(-16.137deg)
+        &__tape
+            width: 7%
+            left: 59%
+            top: 57%
+    .button__save
+        margin-right: 0
+    .footer
+        &__container
+            max-width: 320px
+            padding-top: 50px
+        &__info
+            margin: 0px 12% 28px
+            flex-direction: column
+            gap: 40px
+            &-logo
+                height: 76px
+            &-yoootime
+                height: 24px
+@media (max-width: 320px)
+    .summary
+        &__text-box
+            font-size: 12px
+            padding: 0 10%
+        &__header
+            font-size: 14px
+        &__hints
+            left: 54%
+            top: 55%
+        &__tape
+            left: 64%
+            top: 53%
+
+// Главная страница
+// main__info
+@media (min-width: 1440px)
+  .main__info
+    .main__description
+      min-height: 500px
+
+@media screen and (max-width: 1300px)
+  .main__info
+    .main__description
+      width: 60%
+      font-size: 1.4vw
+
+@media screen and (max-width: 900px)
+  .main
+    margin: 0
+  .main__info
+    .main__description
+        width: 58%
+        p
+            line-height: 1
+
+@media screen and (max-width: 620px)
+  .main__info
+    .main__description
+      width: 75%
+      margin-top: 50%
+      padding-top: 5%
+      margin-bottom: 5%
+      p
+        font-size: 12px
+
+@media (max-width: 320px)
+    ._page-conteiner
+        max-width: 232px
+    .main
+      margin: 0px 5px
+    .main__info
+        line-height: 120%
+        .main__description
+            font-size: 12px
+
+@media (max-width: 375px)
+    ._page-conteiner
+        max-width: 245px
+    .main__info
+        line-height: 120%
+        .main__description
+            font-size: 12px
+
+@media (max-width: 430px)
+    ._container
+        background-position: top 28px center
+    ._page-conteiner
+        width: 90%
+    .main__info
+        line-height: 100%
+        .main__description
+          width: 80%
+          margin-top: 46%
+          font-size: 12px
+          p:first-child
+            margin-bottom: 0
+          p
+            line-height: 1
+            padding-bottom: 10px
+
+@media (max-width: 768px)
+  ._page-conteiner
+    max-width: 445px
+  .header__text
+    font-size: 10px
+
+  .main__info
+    background-image: url("../images/index/logo_mini1.svg")
+    .main__description
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      justify-content: center
+      margin-top: 45%
+      padding: 0px 10px
+      background: #ffffff94
+      box-shadow: 5px -10px 30px #ffffff
+      padding: 0px 10px
+      p
+        font-size: 14px
+        padding-bottom: 25px
+
+@media (max-width: 1024px)
+  ._container
+    margin: 0px 15px
+    background-image: url("../images/index/logo_on.svg")
+    background-size: 100%
+    background-position: top 55px center
+    background-repeat: no-repeat
+  ._page-conteiner
+    max-width: 560px
+  .main__info
+    line-height: 120%
+  .header__text
+    font-size: 14px
+
+  //main__result
+@media (max-width: 1024px)
+  .main__result
+    height: 405px
+    max-width: 950px
+    margin: 0px auto
+    margin-bottom: 150px
+    background: url("../images/index/paper_1024.png") top 40px center no-repeat, url("../images/index/cell-yellow.svg") top 100% left 100%/15% no-repeat
+    background-color: $red
+  .main__result-content
+    width: 100%
+    background: none
+    &::before
+      top: -110px
+      left: -60%
+      transform: scale(0.5)
+    &::after
+      bottom: 90px
+      right: -38%
+      width: 243px
+      height: 195px
+    .main__buttons
+      position: relative
+      display: flex
+      justify-content: space-around
+      margin-top: 20px
+      margin-left: 90px
+      width: 100%
+      .main-guide
+        margin-left: 60px
+        margin-right: 20px
+      .main-button
+        margin-right: 0px
+      a
+        font-size: 16px
+        font-weight: 600
+      .btn
+        position: static
+        width: 180px
+      .main__stiker
+        display: flex
+        position: absolute
+        align-items: center
+        justify-content: center
+        padding: 15px
+        top: -30px
+        left: -125px
+        width: 185px
+        height: 185px
+        p
+          padding: 0px 20px
+          font-size: 20px
+        &::after
+          width: 100px
+          height: 78px
+          top: 47%
+          right: -25px
+          transform: rotate(5deg)
+          line-height: 100%
+        .-text-help
+          display: none
+
+  .main__title
+    position: static
+    margin-top: 2px
+    padding-left: 50px
+    width: 100%
+    font-size: 21px
+    &::before
+        left: 45px
+        width: 27%
+  .main__block-list
+    margin-top: 34px
+    font-size: 16px
+    ul
+      padding-left: 5px
+      li
+        &::before
+          left: -10px
+          width: 2px
+          height: 2px
+    .main__slogan
+      display: flex
+      justify-content: flex-end
+      width: 100%
+      &::before
+        top: -10px
+        right: -45px
+        background: url('../images/index/slogan-bg.svg') top center/85% no-repeat
+      p
+        position: static
+        padding-left: 30px
+        width: 295px
+        height: 30px
+        font-size: 20px
+        font-weight: 500
+        line-height: 100%
+
+@media (max-width: 320px)
+  .main
+    margin: 0
+  .main__result
+    height: 394px
+    margin-bottom: 90px
+    background: url("../images/index/paper_mini.png") top 40px center no-repeat, url("../images/index/cell-yellow.svg") top 355px left 275px/25% no-repeat
+    background-color: $red
+  .main__result-content._page-conteiner
+    max-width: 245px
+  .main__result-content
+    width: 100%
+    background: none
+    .main__block-list
+      margin-top: 34px
+      ul
+        padding-left: 5px
+        font-size: 10px
+        li
+          font-size: 10px
+          &::before
+            left: -10px
+            width: 2px
+            height: 2px
+    .main__buttons
+      position: relative
+      display: flex
+      justify-content: space-between
+      margin-left: 0
+      margin-top: 10px
+      width: 100%
+      a
+        font-size: 16px
+        font-weight: 600
+      .btn
+        margin: 0
+        position: static
+        width: 116px
+      .main__stiker
+        display: flex
+        position: absolute
+        justify-content: center
+        top: -10px
+        left: -60px
+        transform: scale(0.3) rotate(-7deg)
+        transition: transform 0.3s ease 0s
+        &::before
+            content: url("../images/index/tap.svg")
+            position: absolute
+            bottom: -40px
+            right: -85px
+            width: 34px
+            height: 39px
+            transform: scale(3)
+        &::after
+          display: none
+        .-stiker-text
+          display: none
+        .-text-help
+          display: flex
+          align-self: center
+          font-size: 50px
+          transform: scale(0.7)
+      .main__stiker.-mini-stiker
+        transform: scale(1.2) rotate(-10deg) translateX(65px) translateY(90px)
+        transition: transform 0.3s ease 0s
+        z-index: 5
+        &::before
+          display: none
+  
+    &::before
+      top: -145px
+      left: 135px
+      transform: scale(0.3)
+    &::after
+      bottom: 85px
+      right: -55px
+      width: 100px
+      height: 100px
+  .main__title
+    position: static
+    margin-top: 5px
+    padding-left: 30px
+    width: 100%
+    font-size: 16px
+    &::before
+        left: 20px
+        width: 50%
+    .main__slogan
+      display: flex
+      justify-content: flex-end
+      width: 100%
+      &::before
+        top: 0
+        right: 5px
+        width: 136px
+        height: 56px
+        background: url('../images/index/marker_mini.svg') top center no-repeat
+      p
+        position: static
+        width: 136px
+        height: 56px
+        font-size: 14px
+        font-weight: 500
+        line-height: 100%
+      .-text-help
+        display: none
+      .-stiker-text
+        display: flex
+
+@media (max-width: 375px)
+  .main
+    overflow: hidden
+  .main__result
+    height: 394px
+    margin-bottom: 90px
+    background: url("../images/index/paper_mini.png") top 40px center no-repeat, url("../images/index/cell-yellow.svg") top 345px left 315px/30% no-repeat
+    background-color: $red
+  .main__result-content._page-conteiner
+    max-width: 255px
+  .main__result-content
+    width: 100%
+    background: none
+    &::before
+      top: -145px
+      left: 155px
+      transform: scale(0.3)
+    &::after
+      bottom: 85px
+      right: -75px
+      width: 120px
+      height: 120px
+    .main__title
+      position: static
+      margin-top: 5px
+      padding-left: 30px
+      width: 100%
+      font-size: 16px
+      &::before
+          left: 20px
+          width: 50%
+    .main__block-list
+      margin-top: 34px
+      font-size: 10px
+      ul
+        padding-left: 5px
+        li
+          &::before
+            left: -10px
+            width: 2px
+            height: 2px
+    .main__buttons
+      position: relative
+      display: flex
+      justify-content: space-between
+      margin-top: 20px
+      margin-left: 0
+      width: 100%
+      a
+        font-size: 16px
+        font-weight: 600
+      .btn
+        margin: 0
+        position: static
+        width: 116px
+      .main__stiker
+        display: flex
+        position: absolute
+        justify-content: center
+        top: -10px
+        left: -60px
+        transform: scale(0.3) rotate(-7deg)
+        transition: transform 0.3s ease 0s
+        &::before
+            content: url("../images/index/tap.svg")
+            position: absolute
+            bottom: -40px
+            right: -85px
+            width: 34px
+            height: 39px
+            transform: scale(3)
+        &::after
+          display: none
+        .-stiker-text
+          display: none
+        .-text-help
+          display: flex
+          align-self: center
+          font-size: 50px
+          transform: scale(0.7)
+      .main__stiker.-mini-stiker
+        transform: scale(1.2) rotate(-10deg) translateX(65px) translateY(90px)
+        transition: transform 0.3s ease 0s
+        z-index: 5
+        &::before
+          display: none
+        .-text-help
+          display: none
+        .-stiker-text
+          display: flex
+    .main__slogan
+      display: flex
+      justify-content: flex-end
+      width: 100%
+      &::before
+        top: 0
+        right: 5px
+        width: 136px
+        height: 56px
+        background: url('../images/index/marker_mini.svg') top center no-repeat
+      p
+        position: static
+        width: 136px
+        height: 56px
+        font-size: 14px
+        font-weight: 500
+        line-height: 100%
+
+@media (max-width: 768px)
+  .main
+    overflow: hidden
+  .main__result
+    height: 394px
+    margin-bottom: 90px
+    background: url("../images/index/paper_mini.png") top 40px center no-repeat, url("../images/index/cell-yellow.svg") top 335px left 355px/30% no-repeat
+    background-color: $red
+  .main__result-content._page-conteiner
+    max-width: 255px
+  .main__result-content
+    width: 100%
+    background: none
+    &::before
+      top: -155px
+      left: 175px
+      transform: scale(0.3)
+    &::after
+      bottom: 85px
+      right: -95px
+      width: 120px
+      height: 120px
+    .main__buttons
+      position: relative
+      display: flex
+      justify-content: space-between
+      margin-top: 20px
+      margin-left: 0
+      width: 100%
+      a
+        font-size: 16px
+        font-weight: 600
+      .btn
+        margin: 0
+        position: static
+        width: 116px
+      .main__stiker
+        display: flex
+        position: absolute
+        justify-content: center
+        top: -10px
+        left: -60px
+        transform: scale(0.3) rotate(-7deg)
+        transition: transform 0.3s ease 0s
+        &::before
+            content: url("../images/index/tap.svg")
+            position: absolute
+            bottom: -40px
+            right: -85px
+            width: 34px
+            height: 39px
+            transform: scale(3)
+        &::after
+          display: none
+        .-stiker-text
+          display: none
+        .-text-help
+          display: flex
+          align-self: center
+          font-size: 45px
+          transform: scale(0.7)
+      .main__stiker.-mini-stiker
+        transform: scale(1.2) rotate(-10deg) translateX(65px) translateY(90px)
+        transition: transform 0.3s ease 0s
+        z-index: 5
+        font-size: 14px
+        &::before
+          display: none
+        .-text-help
+          display: none
+        .-stiker-text
+          display: flex
+
+    .main__title
+      position: static
+      margin-top: 5px
+      padding-left: 30px
+      width: 100%
+      font-size: 16px
+      &::before
+          left: 20px
+          width: 50%
+    .main__block-list
+      margin-top: 34px
+      font-size: 10px
+      ul
+        padding-left: 5px
+        li
+          &::before
+            left: -10px
+            width: 2px
+            height: 2px
+      .main__slogan
+        display: flex
+        justify-content: flex-end
+        width: 100%
+        &::before
+          top: 0
+          right: 5px
+          width: 136px
+          height: 56px
+          background: url('../images/index/marker_mini.svg') top center no-repeat
+        p
+          position: static
+          width: 136px
+          height: 56px
+          font-size: 14px
+          font-weight: 500
+          line-height: 100%
+
+// main__training
+@media (max-width: 1300px)
+  .main__training
+    align-items: center
+  .main__lecture
+    width: 876px
+    height: 97px
+    
+    &::after
+      transform: scale(0.8)
+      top: 90px
+      left: -10px
+    .main__recommendation
+      font-size: 18px
+      height: 100%
+    .main__pointer-to-tech
+      font-size: 25px
+      top: 220px
+      left: 40px
+      &::before
+        transform: scale(0.7)
+        top: -15px
+        left: 0
+      &::after
+        transform: scale(0.7)
+    .main__lecture-video
+      width: 695px
+      height: 295px
+  .main__ideas
+    position: relative
+    margin-top: 330px
+    background: url("../images/index/lucky.svg") bottom 18px right 30px/15% no-repeat, url("../images/index/new-cell-yellow.svg") repeat
+    background-color: $white
+    &-stikers
+        gap: 30px 120px
+
+@media (max-width: 988px)
+  .main__result-content
+    &::after
+      display: none
+
+@media (max-width: 988px)
+  .main__lecture
+    display: flex
+    flex-direction: column
+    margin: 0
+    padding: 5px 15px
+    width: 100%
+    height: 65vw
+    background: none
+    &::after
+      display: none
+    .main__recommendation
+      width: 100%
+      height: 65px
+      background: #fff
+      padding: 15px
+      margin-bottom: 15px
+      font-size: 12px
+    .main__lecture-video
+      width: 100%
+      height: 55vw
+    .main__pointer-to-tech
+      display: none
+  .main__ideas
+    margin-top: 0px
+    width: 95%
+    grid-template-columns: repeat(1, 1fr)
+    grid-template-rows: 86px repeat(5, 1fr)
+    background: url("../images/index/lucky.svg") bottom 5px right 20px/30% no-repeat, url("../images/index/new-cell-yellow.svg") repeat, $white
+    .main__ideas-stiker
+      position: static
+      justify-self: center
+      font-size: 16px
+    .main__ideas-text
+      margin: 0
+      grid-column-start: 1
+      grid-column-end: 2
+      width: 100%
+      height: 86px
+      font-size: 12px
+
+@media (max-width: 375px)
+  .main__training
+    align-items: center
+  .main__lecture
+    flex-direction: column
+    margin: 0
+    padding: 15px 25px
+    width: 100%
+    height: 300px
+    background: none
+    &::after
+      display: none
+    .main__recommendation
+      width: 100%
+      height: 65px
+      background: #fff
+      padding: 15px
+      font-size: 12px
+    .main__pointer-to-tech
+      display: none
+  .main__ideas
+    margin-top: 0
+    width: 95%
+    height: 100%
+    background: url("../images/index/lucky.svg") bottom 5px right 20px/30% no-repeat, url("../images/index/new-cell-yellow.svg") repeat, $white
+    .main__ideas-stiker
+      position: static
+      justify-self: center
+      font-size: 16px
+    .main__ideas-text
+      margin: 0
+      grid-column-start: 1
+      grid-column-end: 2
+      width: 100%
+      height: 86px
+      font-size: 12px
+
+@media (max-width: 320px)
+  .main__training
+    align-items: center
+    .main__lecture
+      flex-direction: column
+      margin: 0
+      padding: 15px 25px
+      width: 100%
+      height: 260px
+      background: none
+      &::after
+        display: none
+      .main__recommendation
+        width: 100%
+        height: 65px
+        background: #fff
+        padding: 15px
+        font-size: 12px
+
+      .main__pointer-to-tech
+        display: none
+  .main__ideas
+    margin-top: 0
+    width: 95%
+    background: url("../images/index/lucky.svg") bottom 5px right 20px/30% no-repeat, url("../images/index/new-cell-yellow.svg") repeat, $white
+    .main__ideas-stiker
+      position: static
+      justify-self: center
+      font-size: 16px
+    .main__ideas-text
+      margin: 0
+      padding: 0
+      grid-column-start: 1
+      grid-column-end: 2
+      width: 100%
+      height: 86px
+      font-size: 12px
+
+// guide
+@media (min-width: 1440px)
+    .main__description._page-conteiner._margin-guide
+        min-height: 420px
+
+@media (max-width: 1300px)
+    ._description-guide
+        .main__guide-text
+            width: 60%
+            p
+                font-size: 1.4vw
+
+@media (max-width: 1024px)
+    .main__description._page-conteiner._margin-guide
+        min-height: 25vw
+
+@media (max-width: 768px)
+    ._description-guide
+        .main__guide-text
+            width: 58%
+            p
+                font-size: 14px
+
+    .main__guide-text-warning
+        font-size: 2.5vw
+
+    .main__img
+        width: 100%
+        height: 80vw
+        margin-right: 0
+        margin-left: 0
+        border: 5px solid #FC4545
+    .main__guide-text
+            font-size: 10px
+    .img
+        background-size: contain
+    .image1
+        background-image: url("../images/screens/screen1.2.jpg")
+
+    .image4
+        background-image: url("../images/screens/screen4.2.jpg")
+
+    .text-change3
+        display: block
+    .text-change4
+        display: none
+
+@media (max-width: 620px)
+    ._description-guide
+        .main__guide-text
+            width: 75%
+            padding: 0px 5px
+            p
+                font-size: 12px
+    .main__guide-btn
+        flex-direction: column
+        gap: 20px
+        margin-top: 15px
+        margin-bottom: 50px
+
+@media (max-width: 425px)
+    ._description-guide
+        .main__guide-text
+            width: 80%
+
+    .main__guide-text-warning
+        font-size: 3vw
+
+@media (max-width: 375px)
+    .main__description._page-conteiner._margin-guide
+        p
+            font-size: 10px
+    ._description-guide
+        .main__guide-text
+            p
+                font-size: 10px
+                line-height: 1.1

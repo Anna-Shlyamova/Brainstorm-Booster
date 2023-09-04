@@ -1,0 +1,35 @@
+//- Блок целевая аудитория
+mixin target_group
+    section#block2.target-group
+        img.target-group__number(src="assets/images/general/2.svg", alt="Номер задания 2")
+        h2.block__header.target-group__header Для кого всё это?
+        .target-group__text-box
+            p.block__text.target-group__text <strong>Расскажи о своем потребителе. Заполни фреймворк ниже, отвечая на вопросы:</strong> что он делает, слышит, чувствует и говорит. 
+        #blockTG1
+            .target-group__input-table
+                .target-group__input-field.target-group__input-field--say1(onclick="sizerFields('target-group', '__input-field--say1')")
+                    textarea#say1.block__input.target-group__input(name="target-group_say",maxlength="1000", oninput="countChars('say1')", placeholder="говорит")
+                    output#say1_out.target-group__output.target-group__output--left <span id="count_say1">0</span>/1000
+                .target-group__input-field.target-group__input-field--think1(onclick="sizerFields('target-group', '__input-field--think1')")   
+                    textarea#think1.block__input.target-group__input.target-group__input--right(name="target-group_think",maxlength="1000",oninput="countChars('think1')",placeholder="думает")
+                    output#think1_out.target-group__output <span id="count_think1">0</span>/1000
+                .target-group__input-field.target-group__input-field--do1(onclick="sizerFields('target-group', '__input-field--do1')")
+                    textarea#do1.block__input.target-group__input(name="target-group_do",maxlength="1000", oninput="countChars('do1')",placeholder="делает")
+                    output#do1_out.target-group__output.target-group__output--left <span id="count_do1">0</span>/1000
+                .target-group__input-field.target-group__input-field--feel1(onclick="sizerFields('target-group', '__input-field--feel1')")
+                    textarea#feel1.block__input.target-group__input.target-group__input--right(name="target-group_feel",maxlength="1000",oninput="countChars('feel1')",placeholder="чувствует")
+                    output#feel1_out.target-group__output <span id="count_feel1">0</span>/1000
+                #round1.target-group__round 
+                    p Что?
+        button#addTG.btn--red.btn.target-group__btn--red(type="button") добавить ЦА
+        button.btn.target-group__btn.save-btn сохранить
+        button.btn.target-group__btn--ready.ready-btn  готово
+        img.target-group__notes-back(src="assets/images/general/grid_back.svg")
+        img.target-group__notes-back--small(src="assets/images/general/grid_grin_5.svg")
+        textarea.target-group__notes.block__note(name="target-group_note",maxlength="150", placeholder="Ты можешь оставлять заметки на этих полях")
+        .block_hints.target-group__hints(onclick="closerHint('target-group')")
+            img.block_hints-cross(src="assets/images/general/X.svg")
+            p Не ограничивай себя возрастом, статусом, или полом. Представь, что это фильм  о потребителе, опиши своего героя. Опиши несколько персонажей.
+        img.target-group__hints--small(src="assets/images/general/little-yellow-sticker.svg" onclick="sizerHint('target-group')")
+        span.target-group__hints_text--small(onclick="sizerHint('target-group')") Подсказка
+        img.target-group__tape(src="assets/images/general/tape.svg", alt="")

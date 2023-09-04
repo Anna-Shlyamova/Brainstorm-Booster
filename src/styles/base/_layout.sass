@@ -1,0 +1,158 @@
+*
+  box-sizing: border-box
+
+body
+  font-family: $family-montserrat
+
+  h1,h2,h3
+    margin: 0
+    padding: 0
+
+    font-family: $family-montserrat
+    font-weight: 600
+    font-size: 14px
+  p
+    margin: 0
+    padding: 0
+    font-family: $family-montserrat
+    font-weight: 400
+  ol
+    margin: 0
+    padding: 0
+  ul
+    margin: 0
+    padding: 0
+  li
+    margin: 0
+    padding: 0
+
+  a
+    text-decoration: none
+    color: black
+// -------------------------------------
+button
+  cursor: pointer
+
+
+.btn
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 232px
+  height: 42px
+  background-color: #222222
+  color: $white
+  font-family: $family-montserrat
+  font-weight: 400
+  font-size: 20px
+  border: none
+  &:hover
+    color: #222222
+    background-color: $white
+    border: 1px solid #222222
+
+.btn--red
+  background-color: $red
+  color: $white
+  font-family: $family-montserrat
+  font-weight: 400
+  font-size: 20px
+  border: none
+  &:hover
+    color: #222222
+    background-color: $white
+    border: 1px solid #222222
+// Стикер
+._stiker
+  position: absolute
+  display: flex
+  align-items: center
+  width: 300px
+  height: 300px
+  font-size: 24px
+  background-color: $green
+
+  p
+    padding: 0px 15px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: $stikers-font
+  &-scotch
+    position: absolute
+    top: -30px
+    left: 38%
+
+.block__input //-ввод текста, общие стили
+
+  padding: 15px 0 0 20px 
+  background-color: #F2F2F2
+  border: none
+  border-bottom: solid #F2F2F2 17px
+  font-size: 18px
+  line-height: 22px
+  resize: none
+  overflow-y: scroll
+  &::-webkit-scrollbar
+    background-color: #F2F2F2
+    &-thumb //- ползунок скролбара
+      background-color: #D9D9D9
+      width: 13px
+  &:focus, &:hover, &:active
+    outline: none //- отключила рамку при нажатии
+  &::-moz-placeholder, &::-webkit-input-placeholder
+    color: $font-grey //-цвет текста подсказки
+
+.block__header //-заголовки блоков, общие стили
+  font-size: 25px
+  background: #ffffff94
+  box-shadow: 15px -5px 30px #ffffff
+
+.block__text
+  font-size: 18px
+  background: #ffffff94
+  box-shadow: 0 0 30px #ffffff
+
+
+.block__note //-поля для заметок, общие стили
+  border: none
+  font-family: $stikers-font
+  font-size: 24px
+  line-height: 24px
+  resize: none
+  overflow: hidden
+  &:focus, &:hover, &:active
+    outline: none
+  &::placeholder
+    color: #222222
+  &:focus::placeholder
+    color: transparent
+
+.block_hints //-стикеры, общие стили
+  width: 255px
+  height: 255px
+  &-cross
+    display: none
+    position: absolute
+    top: 8px
+    right: 9px
+    width: 17px
+    opacity: 60%
+
+.container //- контейнер для всего содержимого файла
+  position: relative
+  max-width: 1210px
+  margin: 0 auto
+  display: flex
+  align-items: center
+  flex-direction: column
+
+.content-container //- контейнер для блоков
+  max-width: $input-width
+
+.container-bg
+
+  background-image: url("../images/general/long-red-line.svg")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center 300px

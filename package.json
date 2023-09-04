@@ -1,0 +1,40 @@
+{
+  "name": "brainstorm_booster",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build --production",
+    "clean": "gulp clean"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "browser-sync": "^2.29.3",
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-debug": "^4.0.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-pretty-html": "^2.0.10",
+    "gulp-pug": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.62.1",
+    "webpack": "^5.88.1",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

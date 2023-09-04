@@ -1,0 +1,130 @@
+.target-group
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    margin-bottom: 348px
+    &__btn
+        padding:10px 72px 10px 58px
+        &--ready
+            display: none
+    &__btn--red
+        display: block
+        padding:10px 280px 10px 278px
+        width: 100%
+        margin-bottom: 10px
+        &_empty
+            display: none
+    &__btn_back:hover
+        cursor: pointer
+    &__header
+        padding-left: 20px
+        width: $input-width
+        margin-bottom: 5px
+    &__text-box
+        margin-bottom: 15px
+    &__text
+        line-height:19.5px
+        padding-left: 20px
+        width: $input-width
+    &__input-table
+        position: relative
+        width: $input-width
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(2, 194px)
+        grid-gap: 28px 28px
+        margin-bottom: 10px
+        &--margin
+            margin-top: 40px
+    &__input-field
+        position: relative
+    &__input
+        width: 100%
+        height: 100%
+        font-family: $family-montserrat
+        font-weight: 400
+        padding: 20px 5 0 25px
+        margin-bottom: 0
+        &::placeholder
+            padding-left: 115px
+            padding-top: 75px
+        &--right
+            padding-left:25px
+            &::placeholder
+                padding-left: 87px       
+    &__output
+        display: none
+        position: absolute
+        bottom: 2px
+        right: 20px
+        font-family: $family-montserrat
+        font-weight: 400
+        color: $font-grey
+            
+        &--left
+            right: 35px
+    &__round
+        position: absolute
+        top: 154px
+        left: 299px
+        width: 100px
+        height: 100px
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: $white
+        border-radius: 100px
+        font-size: 20px
+        border: none
+        z-index: 1
+        p
+            font-family: $family-montserrat
+            font-weight: 600
+    &__number
+        position: absolute
+        z-index: 2
+        top: 4px
+        left: -47px
+    &__notes
+        width: 313px
+        height: 312px
+        position: absolute
+        z-index: 1
+        top: 178px
+        right: -347px
+        padding-left: 55px
+        padding-right: 24px
+        padding-top: 65px
+        background-color: rgba(255,255,255,0)
+        &-back
+            width: 313px
+            height: 312px
+            position: absolute
+            z-index: -1
+            top: 178px
+            right: -347px
+        &-back--small
+            display: none
+    &__hints
+        position: absolute
+        left: -270px
+        top: 160px
+        padding-top: 50px
+        padding-left: 35px
+        font-size: 24px
+        line-height: 24px
+        background-color: $yellow
+        transform: rotate(-10.02deg)
+        p
+            font-family: $stikers-font
+        &--small
+            display: none
+        &_text--small
+            display: none    
+    &__tape
+        position: absolute
+        left: -190px
+        top: 124px
+        transform: rotate(6.72deg)
+

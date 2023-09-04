@@ -1,0 +1,32 @@
+//- Блок "Финишная прямая" или value proposition
+mixin value_proposition
+    section#block8.value-proposition
+        img.value-proposition__number(src="assets/images/general/8.svg", alt="Номер задания 8")
+        h2.block__header.value-proposition__header Финишная прямая
+        .value-proposition__text-box
+            p.block__text.value-proposition__text <strong> Ура, мы добрались, давай поразмышляем, как реализованная идея закрывает потребности аудитории, описанные выше. </strong>
+            p.block__text.value-proposition__text <strong>Задай себе вопросы: </strong>Как реализованная идея встраивается в жизнедеятельность людей? Как снижает тревожность и закрывает боли? Как делает их счастливее?
+        img.value-proposition__grid-back(src="assets/images/general/grid_back.svg")
+        #blockVP1
+            .value-proposition__input-table
+                .value-proposition__input-field.value-proposition__input-field--first.value-proposition__input-field--left1(onclick="sizerFields('value-proposition', '__input-field--left1')")
+                    textarea#left1.block__input.value-proposition__input.value-proposition__input--left(name="value-proposition_left",maxlength="1000", oninput="countChars('left1') ", placeholder="Как продукт встраивается в жизнедеятельность людей или проект?")
+                    output#left1_out.value-proposition__output.value-proposition__output--left <span id="count_left1">0</span>/1000
+                .value-proposition__input-field.value-proposition__input-field--right-up1(onclick="sizerFields('value-proposition', '__input-field--right-up1')")
+                    textarea#right-up1.block__input.value-proposition__input(name="value-proposition_right-up",maxlength="1000", oninput="countChars('right-up1')", placeholder="Как делает их счастливее?")
+                    output#right-up1_out.value-proposition__output <span id="count_right-up1">0</span>/1000
+                .value-proposition__input-field.value-proposition__input-field--right-down1(onclick="sizerFields('value-proposition', '__input-field--right-down1')")
+                    textarea#right-down1.block__input.value-proposition__input(name="value-proposition_right-down",maxlength="1000",oninput="countChars('right-down1')",placeholder="Как снижает тревожность и закрывает боли?")
+                    output#right-down1_out.value-proposition__output <span id="count_right-down1">0</span>/1000
+                #round1.value-proposition__round 
+                    p ЦА
+        button#addVP.btn--red.btn.value-proposition__btn--red(type="button") добавить блок
+        button.btn.value-proposition__btn.save-btn сохранить
+        button.btn.value-proposition__btn--ready.ready-btn  готово
+        textarea.value-proposition__notes.block__note(name="value-proposition_note",maxlength="150", placeholder="Ты можешь оставлять заметки на этих полях")
+        .block_hints.value-proposition__hints(onclick="closerHint('value-proposition')")
+            p Пройдите этот путь для каждой аудитории из пункта N2
+            img.block_hints-cross(src="assets/images/general/X.svg")
+        img.value-proposition__tape(src="assets/images/general/tape.svg", alt="")
+        img.value-proposition__hints--small(src="assets/images/general/little-green-sticker.svg" onclick="sizerHint('value-proposition')")
+        span.value-proposition__hints_text--small(onclick="sizerHint('value-proposition')") Подсказка

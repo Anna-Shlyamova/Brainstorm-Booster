@@ -1,0 +1,245 @@
+$rotation: 150deg
+
+.counter
+  position: relative
+  margin-bottom: 250px
+  &__number
+    position: absolute
+    top: 4px
+    left: -50px
+  &__header
+    padding-left: 20px
+    margin-bottom: 5px
+    background: #ffffff94
+    box-shadow: 0 0 30px #ffffff
+  &__text
+    padding-left: 20px
+    padding-bottom: 10px
+    background: #ffffff94
+    box-shadow: 0 0 30px #ffffff
+    span
+      color: #FC4545
+  &__hints
+    &--small
+      display: none
+    &_text--small
+      display: none
+  &__chang-text
+    position: relative
+    margin-bottom: 25px
+    &::after
+      content: ''
+      position: absolute
+      top: -20px
+      left: -15px
+      width: 742px
+      height: 97px
+      z-index: -1
+      background: url("../images/general/counter/marker.svg") center/95% no-repeat
+
+  &__entry-fields
+    display: flex
+    height: 428px
+    margin-bottom: 10px
+    textarea
+      display: block
+      width: 100%
+      height: 100%
+    textarea::placeholder
+      opacity: 1
+
+    .textarea-format
+      position: relative
+      padding: 0
+      margin-right: 30px
+      flex-basis: 100%
+      overflow: hidden
+      transition: all 0.5s ease 0s
+      background: #F2F2F2
+      textarea
+        height: 95%
+      #format_out
+        position: absolute
+
+    .textarea-themes
+      position: relative
+      padding: 0
+      flex-basis: 100%
+      transition: all 0.5s ease 0s
+      background: #F2F2F2
+      textarea
+        height: 95%
+      #themes_out
+        position: absolute
+
+  &__textarea-block
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    transition: all 0.5s ease 0s
+    textarea
+      border: none
+      padding: 0
+
+  &__textarea-idea
+    height: 100%
+    margin-bottom: 10px
+    background: #F2F2F2
+    textarea
+      height: 85%
+    &:last-child
+      margin: 0
+  &__textarea-comment
+    height: 100%
+    margin-bottom: 10px
+    background: #F2F2F2
+    textarea
+      height: 85%
+    &:last-child
+      margin-bottom: 0
+  &__output
+    display: none
+    position: absolute
+    bottom: 2px
+    right: 20px
+    font-family: $family-montserrat
+    font-weight: 400
+    color: $font-grey
+  &__btn
+    margin-top: 10px
+    margin-bottom: 30px
+  button
+    display: flex
+    justify-items: flex-end
+    background: #FC4545
+    &:hover
+      color: #222222
+      background-color: $white
+      border: 1px solid #000
+    &:active
+      color: $white
+      background-color: $red
+      border: none
+
+  .textarea-ideas
+    .block-idea1
+      position: relative
+      #idea1_out
+        position: absolute
+    .block-idea2
+      position: relative
+      #idea2_out
+        position: absolute
+    .block-idea3
+      position: relative
+      #idea3_out
+        position: absolute
+
+  .textarea-comments
+    .block-comment1
+      position: relative
+      #idea-desc1
+        position: absolute
+    .block-comment2
+      position: relative
+      #idea-desc2
+        position: absolute
+    .block-comment3
+      position: relative
+      #idea-desc3
+        position: absolute
+
+  .textarea-ideas,
+  .textarea-comments
+    flex-basis: 0%
+    opacity: 0
+    padding: 0
+    .block__input
+      &:nth-child(5)
+        margin-bottom: 0
+    textarea
+      opacity: 0
+      padding: 0
+      transition: flex-basis 0.5s ease 0s, opacity 0.3s ease 0s, padding 0.5s ease 0s
+
+  .textarea-ideas.show,
+  .textarea-comments.show
+    flex-basis: 100%
+    opacity: 1
+    &:last-child
+      margin-bottom: 0
+    textarea
+      opacity: 1
+      padding: 10px
+      transition: flex-basis 0.5s ease 0s, opacity 0.7s ease 0.1s, padding 0.5s ease 0s
+
+.counter__buttons
+  display: flex
+  justify-content: flex-end
+  margin-bottom: 30px
+
+.counter__btn_next
+  margin-left: 20px
+.btn.counter__btn_back
+  display: none
+  opacity: 0
+.btn.counter__btn_back._btn_back
+  opacity: 1
+  display: flex
+
+.counter__text-first
+  height:65px
+  transition: all 0.5s ease 0s
+.block-none
+  width: 0
+  height: 0
+  padding: 0
+  overflow: hidden
+  transition: all 0.5s ease 0s
+
+.counter__btn_next.counter_btn-black
+  background: #000
+  &:hover
+    background: #fff
+
+textarea.counter__notes
+  position: absolute
+  padding: 40px
+  bottom: 5%
+  left: 100%
+  width: 343px
+  height: 255px
+  background: url("../images/general/dots_back_small.svg") no-repeat
+
+.counter__stikers
+  position: absolute
+  top: 35%
+  right: 143%
+  transition: all 0.3s ease 0s
+  z-index: 1
+
+  .counter_hints1
+    background: #F9E53C
+    transform: rotate(-5deg)
+  .counter_hints2
+    opacity: 0
+    transform: rotate(150deg)
+    transform-origin: top left
+    transition: all 0.3s ease 0s
+  .counter_hints3
+    background: #F9E53C
+    overflow: hidden
+    opacity: 0
+    transform: rotate(155deg)
+    transform-origin: top left
+    transition: all 0.3s ease 0s
+
+  .counter__stikers_show
+    opacity: 1
+    transition: all 0.3s ease 0s
+  .counter_hints2.counter__stikers_show
+    transform: rotate(150deg - $rotation)
+    transition: all 0.3s ease 0s
+  .counter_hints3.counter__stikers_show
+    transform: rotate(155deg - $rotation)
+    transition: all 0.3s ease 0s
